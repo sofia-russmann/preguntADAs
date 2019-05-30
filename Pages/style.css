@@ -8,3 +8,8 @@
     flex-direction: row;
     list-style: none;
 }
+
+nav {
+    display: flex;
+    justify-content: center;
+}
