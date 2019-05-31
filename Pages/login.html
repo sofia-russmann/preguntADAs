@@ -4,56 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <title>ACCESO</title>
+    <link rel="stylesheet" href="../Styles/main.css">
 </head>
 
 <body>
-    <div id="registro">
-        <form>
-            <div class="options">
-                <div class="option1"><button>Registrate</button></div>
-                <div class="option2"></div>
+    <div class="form">
+        <ul class="optiongroup">
+            <li class="option active"><a href="#registrar">Registrate</a></li>
+            <li class="option"><a href="#iniciarsesion">Inicia Sesión</a></li>
+        </ul>
+        <div class="formcontainer">
+            <div id="signup">
+                <h1>Bienvenida!</h1>
+                <form>
+                    <div class="toprow">
+                        <div class="completinput">
+                            <label>
+                                Nombre<span class="req">*</span>
+                            </label>
+                            <input type="text" required autocomplete="off" />
+                        </div>
+                        <div class="completinput">
+                            <label>
+                                Apellido<span class="req">*</span>
+                            </label>
+                            <input type="text" required autocomplete="off" />
+                        </div>
+                    </div>
+                    <div class="completinput">
+                        <label>
+                            Email<span class="req">*</span>
+                        </label>
+                        <input type="email" required autocomplete="off" />
+                    </div>
+                    <div class="completinput">
+                        <label>
+                            Elegí una contraseña<span class="req">*</span>
+                        </label>
+                        <input type="password" required autocomplete="off" />
+                    </div>
+                    <button type="submit" class="buttonbutton" >Comenzar</button>
+                </form>
             </div>
-            <h2 class="message">Bienvenida!</h2>
-            <div>
-                <div id="firstname"> 
-                    <label> Primer nombre </label>
-                    <input>
-                </div>
-                <div id="surname">
-                    <label> Apellido </label>
-                    <input>
-                </div>
-                <div id="user">
-                    <label>Usuario</label>
-                    <input>
-                </div>
-                <div id="password">
-                    <label>Contraseña </label>
-                    <input>
-                </div>
+            <div id="login">
+                <h1>Bienvenida!</h1>
+                <form>
+                    <div class="completinput">
+                        <label>
+                            Email<span class="req">*</span>
+                        </label>
+                        <input type="email" required autocomplete="off" />
+                    </div>
+                    <div class="completinput">
+                        <label>
+                            Contraseña<span class="req">*</span>
+                        </label>
+                        <input type="password" required autocomplete="off" />
+                    </div>
+                    <p class="forgot"><a href="#">¿Olvidaste tu contraseña?</a></p>
+                    <button class="buttonbutton" >Iniciar sesión</button>
+                </form>
             </div>
-            <button type="submit" class="send-button">Regístrate</button>
-        </form>
-    </div>
-    <div id="login">
-        <form>
-            <div class="options">
-                <div class="option1"></div>
-                <div class="option2"></div>
-            </div>
-            <h2 class="message">Bienvenida!</h2>
-            <div>
-                <div class="user">
-                    <label>Usuario</label>
-                    <input>
-                </div>
-                <div class="password">
-                    <label> Contraseña </label>
-                    <input>
-                </div>
-            </div>
-            <button type="submit" class="send-button">Iniciar Sesion</button>
-        </form>
+        </div>
     </div>
     <script type="text/javascript" src="../js/login.js"></script>
 </body>
