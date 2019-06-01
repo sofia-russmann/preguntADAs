@@ -1,0 +1,106 @@
+/* CSS completo de la página de JUEGO.*/ 
+
+/* BODY */
+
+body {
+    padding: 0;
+    width: 100%;
+    max-width: 1500px;
+}
+
+        /* //////////////////////////
+                NAV
+        ////////////////////////// */
+body {
+    nav {
+    display: flex;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+    }
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0 50px;
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* 
+        ///////////////////////
+            CONTENEDOR
+        //////////////////////
+*/
+body {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#perfil {
+    img {
+        width: 140px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    width: 300px;
+}
+
+.principal-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.info-pregunta {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.preguntas {
+    width: 700px;
+}
+
+.perfil-list {
+    list-style: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+}
+
+.lista-preguntas {
+    list-style: none;
+    margin: 10px auto;
+}
+
+.titulo-pregunta {
+    font-family: 'Rubik', sans-serif;
+}
+
+.info {
+    ul {
+        padding: 0;
+    }
+}
+
+.info-de-usuario {
+    font-family: 'Rubik', sans-serif;
+    text-transform: lowercase;
+}
+
+
