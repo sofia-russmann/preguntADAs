@@ -1,3 +1,8 @@
+#crearPregunta {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     font-family: $main-font;
     color: $main-color;
@@ -14,32 +19,42 @@ h2 {
     margin: 10px;
 }
 
-.crear-pregunta-container {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 900px;
     margin-bottom: 10px;
+
     color: $main-color;
 }
 
-.crear-pregunta-parcial {
+.section {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 700px;
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
+
     border-radius: 20px;
     color: $main-color;
 }
 
-.crear-pregunta-opciones {
-    background-color: $background-inputs;
+.opcionesCategorias {
+    display: flex;
+    flex-direction: column;
 }
 
 .respuestas {
+    display: flex;
+    flex-direction: column;
+}
+
+.seleccionRespuestas {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,9 +70,11 @@ input {
     padding: 5px;
     margin: 5px;
     box-sizing: border-box;
+
     background-color: $background-inputs;
     border-radius: 5px;
     box-shadow: 0;
+
     font: $secondary-font;
 }
 
@@ -66,7 +83,9 @@ select {
     height: 40px;
     padding: 5px;
     margin: 5px;
+
     border-radius: 5px;
     box-sizing: border-box;
+
     font: $secondary-font;
 }

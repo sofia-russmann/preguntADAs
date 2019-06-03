@@ -1,45 +1,58 @@
-.rankings-container {
+#rankings {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     width: 900px;
     margin-bottom: 10px;
+    
     color: $main-color;
 }
 
-.rankings-usuarios {
+.usuarios {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 700px;
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
+
     border-radius: 20px;
     color: $main-color;
 }
 
-.rankings-categorias {
+.categorias {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 700px;
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
+
     border-radius: 20px;
     color: $main-color;
 }
 
-.rankings-desafios {
+.desafios {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 700px;
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
+
     border-radius: 20px;
     color: $main-color;
 }

@@ -5,49 +5,39 @@
     <link rel="stylesheet"  href="../Styles/css/main.css">
     <title>Crear pregunta</title>
 </head>
-<body>
-    <div class="crear-pregunta-container">
+<body id="crearPregunta">
+    <div class="container">
         <h1>Creá tu pregunta</h1>
-        <div class="crear-pregunta-parcial">
+        <!-- SELECCIONAR CATEGORIA -->
+        <div class="section">
             <h2>Categoría</h2>
-            <select class="crear-pregunta-opciones">
-                <option value="">Categoría 1</option>
-                <option value="">Categoría 2</option>
-                <option value="">Categoría 3</option>
-                <option value="">Categoría 4</option>
-                <option value="">Categoría 5</option>
-                <option value="">Categoría 6</option>
-                <option value="">Categoría 7</option>
-                <option value="">Categoría 8</option>
-                <option value="">Categoría 9</option>
-                <option value="">Categoría 10</option>
-            </select>
+            <select class="opcionesCategorias" id="categorias"></select>
         </div>
-        <div class="crear-pregunta-parcial">
+        <!-- CREAR LA PREGUNTA -->
+        <div class="section">
             <h2>Pregunta</h2>
-            <input type="text" placeholder="Ingresá tu pregunta">
+            <input type="text" placeholder="Ingresá tu pregunta" id="pregunta">
         </div>
-        <div class="crear-pregunta-parcial">
+        <!-- ESCRIBIR RESPUESTAS POSIBLES -->
+        <div class="section">
             <h2>Respuestas posibles</h2>
-            <form class="respuestas">
-                <input type="text" placeholder="Ingresá la opción 1">
-                <input type="text" placeholder="Ingresá la opción 2">
-                <input type="text" placeholder="Ingresá la opción 3">
-                <input type="text" placeholder="Ingresá la opción 4">
+            <form class="respuestas" id="respuestasPosibles">
+                <input type="text" placeholder="Ingresá una opción" id="respuesta1" onchange="mostrarRespuestas()">
+                <input type="text" placeholder="Ingresá una opción" id="respuesta2" onchange="mostrarRespuestas()">
+                <input type="text" placeholder="Ingresá una opción" id="respuesta3" onchange="mostrarRespuestas()">
+                <input type="text" placeholder="Ingresá una opción" id="respuesta4" onchange="mostrarRespuestas()">
             </form>
         </div>
-        <div class="crear-pregunta-parcial">
+        <!-- SELECCIONAR LA RESPUESTA CORRECTA -->
+        <div class="section">
         <h2>Respuesta correcta</h2>
-            <select class="crear-pregunta-opciones">
-                <option value="">Opción 1</option>
-                <option value="">Opción 2</option>
-                <option value="">Opción 3</option>
-                <option value="">Opción 4</option>
-            </select>
+            <select class="seleccionRespuestas" id="respuestaCorrecta"></select>
         </div>
-        <div class="crear-pregunta-parcial">
+        <!-- AGREGAR RESPUESTA A BASE DE DATOS -->
+        <div class="section">
             <button class="button_1">AGREGAR</button>
         </div>
     </div>
+    <script src="../JS/perfil/crearpregunta.js"></script>
 </body>
 </html>
