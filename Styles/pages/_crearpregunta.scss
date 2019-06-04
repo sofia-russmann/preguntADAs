@@ -1,31 +1,9 @@
-.banner-text {
-    font-family: 'Heebo', sans-serif;
-    font-size: 60px;
-    color: #504e4e;
-    display: flex;
-    align-items: center;
-}
-
 #crearPregunta {
     display: flex;
     flex-direction: column;
     width: 100%;
-    h1 {
-        font-family: $main-font;
-        color: $main-color;
-        text-decoration: none;
-        font-size: 34px;
-        line-height: 38px;
-        margin: 0px;
-    }
-    h2 {
-        font-family: $secondary-font;
-        color: $secondary-color;
-        text-decoration: none;
-        font-size: 24px;
-        line-height: 28px;
-        margin: 10px;
-    }
+    font-family: $body-font;
+
     .container {
         display: flex;
         flex-direction: column;
@@ -33,61 +11,63 @@
 
         width: 100%;
         margin-bottom: 10px;
-
+        
         color: $main-color;
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            width: 90%;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            
+            .opcionesCategorias {
+                display: flex;
+                flex-direction: column;
+                color: $secondary-color;
+            }
+            .respuestas {
+                display: flex;
+                flex-direction: column;
+                color: $secondary-color;
+            }
+            .seleccionRespuestas {
+                display: flex;
+                flex-direction: column;
+                color: $secondary-color;    
+            }
+            select {
+                width: 600px;
+                height: 40px;
+                padding: 5px;
+                margin: 5px;
+            
+                border-radius: 5px;
+                box-sizing: border-box;
+            
+                font: $body-font;
+            }
+            input {
+                width: 600px;
+                height: 40px;
+                padding: 5px;
+                margin: 5px;
+                box-sizing: border-box;
+            
+                border-radius: 5px;
+                box-shadow: 0;
+            
+                font: $banner-font;
+            }
+            .button_1 {
+                color: $main-color;
+                background-color: $secondary-color;
+                width: 20%;
+                font: $banner-font;
+            }
+        }
     }
-    .section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
-        width: 90%;
-        margin: 10px;
-        padding: 10px;
-        box-sizing: border-box;
-        .opcionesCategorias {
-            display: flex;
-            flex-direction: column;
-            color: $secondary-color;
-        }
-        .respuestas {
-            display: flex;
-            flex-direction: column;
-            color: $secondary-color;
-        }
-        .seleccionRespuestas {
-            display: flex;
-            flex-direction: column;
-            color: $secondary-color;    
-        }
-        select {
-            width: 600px;
-            height: 40px;
-            padding: 5px;
-            margin: 5px;
-        
-            border-radius: 5px;
-            box-sizing: border-box;
-        
-            font: $secondary-font;
-        }
-        input {
-            width: 600px;
-            height: 40px;
-            padding: 5px;
-            margin: 5px;
-            box-sizing: border-box;
-        
-            border-radius: 5px;
-            box-shadow: 0;
-        
-            font: $secondary-font;
-        }
-        .button_1 {
-            color: $main-color;
-            background-color: $secondary-color;
-            width: 20%;
-            font: $secondary-font;
-        }
-    }
 }

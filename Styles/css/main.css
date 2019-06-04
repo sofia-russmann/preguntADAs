@@ -417,34 +417,11 @@ template {
   margin-right: 5px;
 }
 
-.banner-text {
-  font-family: "Heebo", sans-serif;
-  font-size: 60px;
-  color: #504e4e;
-  display: flex;
-  align-items: center;
-}
-
 #crearPregunta {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-#crearPregunta h1 {
-  font-family: "Raleway", sans-serif;
-  color: #504e4e;
-  text-decoration: none;
-  font-size: 34px;
-  line-height: 38px;
-  margin: 0px;
-}
-#crearPregunta h2 {
-  font-family: "Heebo", sans-serif;
-  color: #4f81aa;
-  text-decoration: none;
-  font-size: 24px;
-  line-height: 28px;
-  margin: 10px;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 #crearPregunta .container {
   display: flex;
@@ -454,7 +431,7 @@ template {
   margin-bottom: 10px;
   color: #504e4e;
 }
-#crearPregunta .section {
+#crearPregunta .container .section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -463,31 +440,31 @@ template {
   padding: 10px;
   box-sizing: border-box;
 }
-#crearPregunta .section .opcionesCategorias {
+#crearPregunta .container .section .opcionesCategorias {
   display: flex;
   flex-direction: column;
   color: #4f81aa;
 }
-#crearPregunta .section .respuestas {
+#crearPregunta .container .section .respuestas {
   display: flex;
   flex-direction: column;
   color: #4f81aa;
 }
-#crearPregunta .section .seleccionRespuestas {
+#crearPregunta .container .section .seleccionRespuestas {
   display: flex;
   flex-direction: column;
   color: #4f81aa;
 }
-#crearPregunta .section select {
+#crearPregunta .container .section select {
   width: 600px;
   height: 40px;
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
   box-sizing: border-box;
-  font: "Heebo", sans-serif;
+  font: "Open Sans Condensed", sans-serif;
 }
-#crearPregunta .section input {
+#crearPregunta .container .section input {
   width: 600px;
   height: 40px;
   padding: 5px;
@@ -497,7 +474,7 @@ template {
   box-shadow: 0;
   font: "Heebo", sans-serif;
 }
-#crearPregunta .section .button_1 {
+#crearPregunta .container .section .button_1 {
   color: #504e4e;
   background-color: #4f81aa;
   width: 20%;
@@ -508,6 +485,7 @@ template {
   display: flex;
   flex-direction: column;
   width: 100%;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 #rankings .container {
   display: flex;
@@ -517,27 +495,6 @@ template {
   width: 100%;
   margin-bottom: 10px;
   color: #504e4e;
-}
-#rankings .container h1 {
-  font-family: "Raleway", sans-serif;
-  color: #504e4e;
-  font-size: 34px;
-  line-height: 38px;
-  margin: 0px;
-}
-#rankings .container h2 {
-  font-family: "Heebo", sans-serif;
-  color: #4f81aa;
-  font-size: 24px;
-  line-height: 28px;
-  margin: 10px;
-}
-#rankings .container h3 {
-  font-family: "Raleway", sans-serif;
-  color: #4f81aa;
-  font-size: 18px;
-  line-height: 22px;
-  margin: 10px;
 }
 #rankings .container .usuarios {
   display: flex;
