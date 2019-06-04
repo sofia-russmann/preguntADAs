@@ -421,7 +421,10 @@ template {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+#crearPregunta h1 {
   font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
 }
 #crearPregunta .container {
   display: flex;
@@ -429,6 +432,7 @@ template {
   align-items: center;
   width: 100%;
   color: #504e4e;
+  font-family: "Raleway", sans-serif;
 }
 #crearPregunta .container .section {
   display: flex;
@@ -441,7 +445,6 @@ template {
 }
 #crearPregunta .container .section .opcionesCategorias {
   display: flex;
-  flex-direction: column;
 }
 #crearPregunta .container .section .respuestas {
   display: flex;
@@ -472,6 +475,7 @@ template {
 #crearPregunta .container .section .button_1 {
   background: linear-gradient(0deg, #FFCCCC, #CCFFFF);
   border: 1px solid #a9a9a9;
+  border-radius: 5px;
   width: 50%;
 }
 
@@ -479,9 +483,9 @@ template {
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-family: "Open Sans Condensed", sans-serif;
 }
 #rankings h1 {
+  font-family: "Open Sans Condensed", sans-serif;
   text-align: center;
 }
 #rankings .container {
@@ -491,6 +495,13 @@ template {
   justify-items: center;
   width: 100%;
   color: #504e4e;
+  font-family: "Raleway", sans-serif;
+}
+@media (max-width: 750px) {
+  #rankings .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #rankings .container .usuarios {
   display: flex;
@@ -525,7 +536,7 @@ template {
   border-radius: 20px;
   color: #504e4e;
 }
-#rankings .visible {
+#rankings .opciones {
   text-align: center;
 }
 

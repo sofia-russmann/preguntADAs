@@ -62,17 +62,17 @@ let rtaCorrecta = document.getElementById("respuestaCorrecta").value;
 // =================================
 // AGREGAR RESPUESTA A BASE DE DATOS
 // =================================
-const agregarPregunta = function() {
-    let pregRta = {
-        categoria: mostrarCategorias().value,
-        pregunta: obtenerPregunta().value,
-        respuestasPosibles: obtenerRespuestas().value,
-        respuestaCorrecta: rtaCorrecta().value,
-        //borrar innerHTML = "";
-    }
-    console.log(pregRta);
-}
-agregarPregunta();
+// const agregarPregunta = function() {
+//     let pregRta = {
+//         categoria: mostrarCategorias().value,
+//         pregunta: obtenerPregunta().value,
+//         respuestasPosibles: obtenerRespuestas().value,
+//         respuestaCorrecta: rtaCorrecta().value,
+//         //borrar innerHTML = "";
+//     }
+//     console.log(pregRta);
+// }
+// agregarPregunta();
 
 //============================
 // GUARDAR DATOS PARA RANKINGS
@@ -80,16 +80,16 @@ agregarPregunta();
 // 1. Guardar nombre deL usuario que realizó la pregunta.
 
 // 2. Sumar "1" a la categoría de la pregunta creada.
-obtenerCategorias();
-let rankingsCategorias = [rankingCategoria1, rankingCategoria2, rankingCategoria3];
-for(i = 0; i < rankingsCategorias; i++) {
-    switch (categoria) {
-        case "Categoria 1":
-            rankingCategoria1 ++;
-        case "Categoria 2":
-            rankingCategoria2 ++;
-        case "Categoria 3":
-            rankingCategoria3 ++;
-    }
+// obtenerCategorias();
+// let rankingsCategorias = [rankingCategoria1, rankingCategoria2, rankingCategoria3];
+// for(i = 0; i < rankingsCategorias; i++) {
+//     switch (categoria) {
+//         case "Categoria 1":
+//             rankingCategoria1 ++;
+//         case "Categoria 2":
+//             rankingCategoria2 ++;
+//         case "Categoria 3":
+//             rankingCategoria3 ++;
+//     }
 
-}
+// }
