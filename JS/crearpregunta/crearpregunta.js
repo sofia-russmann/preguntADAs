@@ -46,22 +46,33 @@ obtenerRespuestas();
 // =================================
 // 1. Mostrar las respuestas posibles (mostrar el array).
 const mostrarRespuestas = function() {
-    let select = document.getElementById("respuestaCorrecta"); 
-    select.innerHTML = "";
+    let selectRta = document.getElementById("respuestaCorrecta"); 
+    selectRta.innerHTML = "";
     let respuestas = obtenerRespuestas();
     for (let i = 0; i < 4; i++ ) {
-        select.innerHTML += `<option>${respuestas[i]}</option>`;
+        selectRta.innerHTML += `<option>${respuestas[i]}</option>`;
     }
 }
 mostrarRespuestas();
 
 // 2. Guardar la respuesta correcta en una variable.
+let rtaCorrecta = document.getElementById("respuestaCorrecta").value;
 
 
 // =================================
 // AGREGAR RESPUESTA A BASE DE DATOS
 // =================================
-// 1. 
+const agregarPregunta = function() {
+    let pregRta = {
+        categoria: mostrarCategorias().value,
+        pregunta: obtenerPregunta().value,
+        respuestasPosibles: obtenerRespuestas().value,
+        respuestaCorrecta: rtaCorrecta().value,
+        //borrar innerHTML = "";
+    }
+    console.log(pregRta);
+}
+agregarPregunta();
 
 //============================
 // GUARDAR DATOS PARA RANKINGS
@@ -69,3 +80,16 @@ mostrarRespuestas();
 // 1. Guardar nombre deL usuario que realizó la pregunta.
 
 // 2. Sumar "1" a la categoría de la pregunta creada.
+obtenerCategorias();
+let rankingsCategorias = [rankingCategoria1, rankingCategoria2, rankingCategoria3];
+for(i = 0; i < rankingsCategorias; i++) {
+    switch (categoria) {
+        case "Categoria 1":
+            rankingCategoria1 ++;
+        case "Categoria 2":
+            rankingCategoria2 ++;
+        case "Categoria 3":
+            rankingCategoria3 ++;
+    }
+
+}
