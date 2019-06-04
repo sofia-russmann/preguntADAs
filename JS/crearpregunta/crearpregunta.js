@@ -36,7 +36,7 @@ let obtenerRespuestas = function() {
     let respuesta2 = document.getElementById("respuesta2").value;
     let respuesta3 = document.getElementById("respuesta3").value;
     let respuesta4 = document.getElementById("respuesta4").value;
-    let respuestasPosibles = [respuesta1, respuesta2, respuesta3, respuesta4]; // Está bien la sintaxis?
+    let respuestasPosibles = [respuesta1, respuesta2, respuesta3, respuesta4];
     return respuestasPosibles;
 }
 obtenerRespuestas();
@@ -50,7 +50,7 @@ const mostrarRespuestas = function() {
     selectRta.innerHTML = "";
     let respuestas = obtenerRespuestas();
     for (let i = 0; i < 4; i++ ) {
-        selectRta.innerHTML += `<option>${respuestas[i]}</option>`;
+        selectRta.innerHTML += `<option value=${respuestas[i]}>${respuestas[i]}</option>`;
     }
 }
 mostrarRespuestas();
@@ -62,17 +62,17 @@ let rtaCorrecta = document.getElementById("respuestaCorrecta").value;
 // =================================
 // AGREGAR RESPUESTA A BASE DE DATOS
 // =================================
-// const agregarPregunta = function() {
-//     let pregRta = {
-//         categoria: mostrarCategorias().value,
-//         pregunta: obtenerPregunta().value,
-//         respuestasPosibles: obtenerRespuestas().value,
-//         respuestaCorrecta: rtaCorrecta().value,
-//         //borrar innerHTML = "";
-//     }
-//     console.log(pregRta);
-// }
-// agregarPregunta();
+const agregarPregunta = function() {
+    let pregRta = {
+        categoria: document.getElementById("categorias").value,
+        pregunta: obtenerPregunta(),
+        respuestasPosibles: obtenerRespuestas(),
+        respuestaCorrecta: document.getElementById("respuestaCorrecta").value,
+        //borrar innerHTML = "";
+    }
+    console.log(pregRta);
+}
+agregarPregunta();
 
 //============================
 // GUARDAR DATOS PARA RANKINGS
