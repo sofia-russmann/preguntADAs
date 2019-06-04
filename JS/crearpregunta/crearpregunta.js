@@ -50,7 +50,7 @@ const mostrarRespuestas = function() {
     select.innerHTML = "";
     let respuestas = obtenerRespuestas();
     for (let i = 0; i < 4; i++ ) {
-        select.innerHTML += `<option>${respuestas[i]}</option>`; // NO LOGRO MOSTRAR RESPUESTAS!!!
+        select.innerHTML += `<option>${respuestas[i]}</option>`;
     }
 }
 mostrarRespuestas();
