@@ -9,88 +9,88 @@
     <link rel="stylesheet"  href="../Styles/css/main.css">
     <title>Crear pregunta</title>
 </head>
-<body id="crearPregunta">
-    <!-- HEADER -->
-    <header>
-    <!-----------------------------------  BANNER   ----------------------------------->
-        <div id="banner">
-            <h1 class="banner-text">preguntADAs</h1>
+    <body id="crearPregunta">
+        <!-- HEADER -->
+        <header>
+        <!-----------------------------------  BANNER   ----------------------------------->
+            <div id="banner">
+                <h1 class="banner-text">preguntADAs</h1>
+            </div>
+        <!-----------------------------------  NAV BAR   ---------------------------------->
+            <nav id="nav-bar">
+                <a class="menu-link" href="#"><i class="fas fa-home"></i>Home</a>
+                <a class="menu-link" href=""><i class="fas fa-portrait"></i>Perfil</a>
+                <a class="menu-link" href=""><i class="fas fa-gamepad"></i>Juego</a>
+                <a class="menu-link" href=""><i class="fas fa-edit"></i>Crear pregunta</a>
+                <a class="menu-link" href=""><i class="fas fa-gavel"></i></i>Crear desafío</a>
+                <a class="menu-link" href=""><i class="fas fa-trophy"></i>Ranking</a>
+                <a class="menu-link" href=""><i class="fas fa-clipboard-list"></i>Notificaciones</a>
+                <a class="menu-link" href=""><i class="fas fa-sign-out-alt"></i>Salir</a>
+            </nav>
+        </header>
+        <h1>CREA TU PREGUNTA</h1>
+        <div class="container">
+            <!-- SELECCIONAR CATEGORIA -->
+            <div class="section">
+                <h2>Categoría</h2>
+                <select class="opcionesCategorias" id="categorias"></select>
+            </div>
+            <!-- CREAR LA PREGUNTA -->
+            <div class="section">
+                <h2>Pregunta</h2>
+                <input type="text" placeholder="Ingresá tu pregunta" id="pregunta">
+            </div>
+            <!-- ESCRIBIR RESPUESTAS POSIBLES -->
+            <div class="section">
+                <h2>Respuestas posibles</h2>
+                <form class="respuestas" id="respuestasPosibles">
+                    <input type="text" placeholder="Ingresá una opción" id="respuesta1" onchange="mostrarRespuestas()">
+                    <input type="text" placeholder="Ingresá una opción" id="respuesta2" onchange="mostrarRespuestas()">
+                    <input type="text" placeholder="Ingresá una opción" id="respuesta3" onchange="mostrarRespuestas()">
+                    <input type="text" placeholder="Ingresá una opción" id="respuesta4" onchange="mostrarRespuestas()">
+                </form>
+            </div>
+            <!-- SELECCIONAR LA RESPUESTA CORRECTA -->
+            <div class="section">
+            <h2>Respuesta correcta</h2>
+                <select class="seleccionRespuestas" id="respuestaCorrecta"></select>
+            </div>
+            <!-- AGREGAR RESPUESTA A BASE DE DATOS -->
+            <div class="section">
+                <button class="button_1" onclick="agregarPregunta()">AGREGAR</button>
         </div>
-    <!-----------------------------------  NAV BAR   ---------------------------------->
-    <nav id="nav-bar">
-        <a class="menu-link" href="#"><i class="fas fa-home"></i>Home</a>
-        <a class="menu-link" href=""><i class="fas fa-portrait"></i>Perfil</a>
-        <a class="menu-link" href=""><i class="fas fa-gamepad"></i>Juego</a>
-        <a class="menu-link" href=""><i class="fas fa-edit"></i>Crear pregunta</a>
-        <a class="menu-link" href=""><i class="fas fa-gavel"></i></i>Crear desafío</a>
-        <a class="menu-link" href=""><i class="fas fa-trophy"></i>Ranking</a>
-        <a class="menu-link" href=""><i class="fas fa-clipboard-list"></i>Notificaciones</a>
-        <a class="menu-link" href=""><i class="fas fa-sign-out-alt"></i>Salir</a>
-    </nav>
-    </header>
-    <h1>CREA TU PREGUNTA</h1>
-    <div class="container">
-        <!-- SELECCIONAR CATEGORIA -->
-        <div class="section">
-            <h2>Categoría</h2>
-            <select class="opcionesCategorias" id="categorias"></select>
-        </div>
-        <!-- CREAR LA PREGUNTA -->
-        <div class="section">
-            <h2>Pregunta</h2>
-            <input type="text" placeholder="Ingresá tu pregunta" id="pregunta">
-        </div>
-        <!-- ESCRIBIR RESPUESTAS POSIBLES -->
-        <div class="section">
-            <h2>Respuestas posibles</h2>
-            <form class="respuestas" id="respuestasPosibles">
-                <input type="text" placeholder="Ingresá una opción" id="respuesta1" onchange="mostrarRespuestas()">
-                <input type="text" placeholder="Ingresá una opción" id="respuesta2" onchange="mostrarRespuestas()">
-                <input type="text" placeholder="Ingresá una opción" id="respuesta3" onchange="mostrarRespuestas()">
-                <input type="text" placeholder="Ingresá una opción" id="respuesta4" onchange="mostrarRespuestas()">
-            </form>
-        </div>
-        <!-- SELECCIONAR LA RESPUESTA CORRECTA -->
-        <div class="section">
-        <h2>Respuesta correcta</h2>
-            <select class="seleccionRespuestas" id="respuestaCorrecta"></select>
-        </div>
-        <!-- AGREGAR RESPUESTA A BASE DE DATOS -->
-        <div class="section">
-            <button class="button_1" onclick="agregarPregunta()">AGREGAR</button>
-    </div>
-    <!-- FOOTER -->
-    <footer>
-        <h5 class="footer-text">Developed with <i class="fas fa-heart"></i> by</h5>
-        <div class="developers-container">
-            <ul class="developers">
-                <li class="dev">
-                    <img src="karen.jpg" alt="avatar karen burdman" class="dev-avatar">
-                    <h6 class="dev-name">Karen Burdman</h6>
-                    <a href="https://www.linkedin.com/in/karen-burdman-0482ba39/" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                    <a href="https://github.com/Karen1311" class="github"><i class="fab fa-github"></i>GitHub</a>
-                </li>
-                <li class="dev">
-                    <img src="paula.jpg" alt="avatar paula coronel" class="dev-avatar">
-                    <h6 class="dev-name">Paula Coronel</h6>
-                    <a href="https://www.linkedin.com/in/paula-coronel-it/" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                    <a href="https://github.com/PauCoronel" class="github"><i class="fab fa-github"></i>GitHub</a>
-                </li>
-                <li class="dev">
-                    <img src="peu.jpg" alt="avatar paula illanes" class="dev-avatar">
-                    <h6 class="dev-name">Paula Illanes</h6>
-                    <a href="https://www.linkedin.com/in/paula-illanes-romina/" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                    <a href="https://github.com/nicthema" class="github"><i class="fab fa-github"></i>GitHub</a>
-                </li>
-                <li class="dev">
-                    <img src="sofi.jpg" alt="avatar sofía russmann" class="dev-avatar">
-                    <h6 class="dev-name">Sofía Russmann</h6>
-                    <a href="https://www.linkedin.com/in/sof%C3%ADa-russmann-393754172/" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                    <a href="https://github.com/sorussmann/" class="github"><i class="fab fa-github"></i>GitHub</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-    <script src="../JS/crearpregunta/crearpregunta.js"></script>
-</body>
+        <!-- FOOTER -->
+        <footer>
+            <h5 class="footer-text">Developed with <i class="fas fa-heart"></i> by</h5>
+            <div class="developers-container">
+                <ul class="developers">
+                    <li class="dev">
+                        <img src="karen.jpg" alt="avatar karen burdman" class="dev-avatar">
+                        <h6 class="dev-name">Karen Burdman</h6>
+                        <a href="https://www.linkedin.com/in/karen-burdman-0482ba39/" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <a href="https://github.com/Karen1311" class="github"><i class="fab fa-github"></i>GitHub</a>
+                    </li>
+                    <li class="dev">
+                        <img src="paula.jpg" alt="avatar paula coronel" class="dev-avatar">
+                        <h6 class="dev-name">Paula Coronel</h6>
+                        <a href="https://www.linkedin.com/in/paula-coronel-it/" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <a href="https://github.com/PauCoronel" class="github"><i class="fab fa-github"></i>GitHub</a>
+                    </li>
+                    <li class="dev">
+                        <img src="peu.jpg" alt="avatar paula illanes" class="dev-avatar">
+                        <h6 class="dev-name">Paula Illanes</h6>
+                        <a href="https://www.linkedin.com/in/paula-illanes-romina/" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <a href="https://github.com/nicthema" class="github"><i class="fab fa-github"></i>GitHub</a>
+                    </li>
+                    <li class="dev">
+                        <img src="sofi.jpg" alt="avatar sofía russmann" class="dev-avatar">
+                        <h6 class="dev-name">Sofía Russmann</h6>
+                        <a href="https://www.linkedin.com/in/sof%C3%ADa-russmann-393754172/" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <a href="https://github.com/sorussmann/" class="github"><i class="fab fa-github"></i>GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script src="../JS/crearpregunta/crearpregunta.js"></script>
+    </body>
 </html>
