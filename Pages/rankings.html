@@ -18,7 +18,7 @@
             </div>
         <!-----------------------------------  NAV BAR   ---------------------------------->
             <nav id="nav-bar">
-                <a class="menu-link" href="home.html"><i class="fas fa-home"></i>Home</a>
+                <a class="menu-link" href="../index.html"><i class="fas fa-home"></i>Home</a>
                 <a class="menu-link" href="perfil.html"><i class="fas fa-portrait"></i>Perfil</a>
                 <a class="menu-link" href="juego.html"><i class="fas fa-gamepad"></i>Juego</a>
                 <a class="menu-link" href="crearpregunta.html"><i class="fas fa-edit"></i>Crear pregunta</a>
@@ -33,27 +33,32 @@
             <div class="usuarios">
                 <h2>Usuarios</h2>
                 <div class="opciones">
-                    <h3 onclick="mostrarRanking()">Puntajes generales</h3>
-                        <div class="visible">`${puntajeJugada}..........${nombreUsuario}`</div>
-                    <h3 onclick="mostrarRanking()">Puntajes por categorías</h3>
-                        <div class="visible">`${puntajeJugada}..........${nombreUsuario}`</div>
-                    <h3 onclick="mostrarRanking()">Competencias ganadas</h3>
-                        <div class="visible">`${compentenciasGanadas}..........${nombreUsuario}`</div>
+                    <h3>Puntajes generales</h3>
+                        <div class="ranking" id="rankingPuntajes"></div>
+                    <h3>Puntajes por categorías</h3>
+                        <div class="ranking" id="rankingCategorias"></div>
+                    <h3>Competencias ganadas</h3>
+                        <div class="ranking" id="rankingCompetencias"></div>
                 </div>
             </div>
             <div class="categorias">
                 <h2>Categorías</h2>
                 <div class="opciones">
-                    <h3 onclick="">Cantidad de preguntas</h3>
-                    <h3 onclick="">Con mejor puntaje</h3>
+                    <h3>Cantidad de preguntas</h3>
+                        <div class="ranking" id="rankingPreguntas"></div>    
+                    <h3>Con mejor puntaje</h3>
+                        <div class="ranking" id="rankingCatVotadas"></div>  
                 </div>
             </div>
             <div class="desafios">
                 <h2>Desafíos</h2>
                 <div class="opciones">
-                    <h3 onclick="">Mejor puntuados</h3>
-                    <h3 onclick="">Más jugados</h3>
-                    <h3 onclick="">Más nuevos</h3>
+                    <h3>Mejor puntuados</h3>
+                        <div class="ranking" id="rankingVotados"></div>
+                    <h3>Más jugados</h3>
+                        <div class="ranking" id="rankingJugados"></div>
+                    <h3>Más nuevos</h3>
+                        <div class="ranking" id="rankingNuevos"></div>
                 </div>
             </div>
         </div>

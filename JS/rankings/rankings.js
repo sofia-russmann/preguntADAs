@@ -15,30 +15,39 @@
 // puntaje 4, nombreUsuario
 // puntaje 5, nombreUsuario
 
-let infoUsario = {
-    nombreUsuario = "",
-    puntajeJugada = 0,
-    competenciasGanadas = 0
-}
+// let infoUsario = {
+//     nombreUsuario = "",
+//     puntajeJugada = 0,
+//     competenciasGanadas = 0
+// }
 
-let mejoresPuntajes = [{
-    nombreUsuario: "aaa",
+let puntajes = [{
+    nombreUsuario: "Karen",
     puntajeJugada: 10,
 }, {
-    nombreUsuario: "bbb",
-    puntajeJugada: 5
+    nombreUsuario: "Ana",
+    puntajeJugada: 50,
 }, {
-    nombreUsuario: "ccc",
-    puntajeJugada: 23
+    nombreUsuario: "Nico",
+    puntajeJugada: 30,
+}, {
+    nombreUsuario: "Diego",
+    puntajeJugada: 30
 }]
 
 let mostrarRanking = function(){
-    for (let i = 0; i < mejoresPuntajes.length; i++){
-        console.log(mejoresPuntajes[i].puntajeJugada);
-        console.log(mejoresPuntajes[i].nombreUsuario);
+    for (let i = 0; i < puntajes.length; i++){
+        console.log(puntajes[i].puntajeJugada);
+        console.log(puntajes[i].nombreUsuario);
+        // let puesto = {
+        //     puntaje: puntajes[i].puntajeJugada, 
+        //     usuario: puntajes[i].nombreUsuario,
+        // }
+        // return puesto[i];
     }
 }
-mostrarRanking();
+let rankingPuntajes = document.getElementById("rankingPuntajes");
+rankingPuntajes.innerHTML = mostrarRanking();
 
 
 // ===================================================

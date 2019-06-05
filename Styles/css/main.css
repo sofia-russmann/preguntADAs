@@ -552,6 +552,7 @@ footer .developers-container .developers .dev .github .fa-github {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: auto;
 }
 #rankings h1 {
   font-family: "Open Sans Condensed", sans-serif;
@@ -607,9 +608,13 @@ footer .developers-container .developers .dev .github .fa-github {
 }
 #rankings .opciones {
   text-align: center;
+  width: 75%;
+  height: 800px;
+  border-radius: 10px;
+  background-image: linear-gradient(0deg, #FFCCCC, #CCFFFF);
 }
-#rankings .opciones .visible {
-  display: none;
+#rankings .opciones .ranking {
+  color: #4f81aa;
 }
 
 /*# sourceMappingURL=main.css.map */
