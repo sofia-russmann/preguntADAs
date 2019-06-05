@@ -54,5 +54,8 @@
     }
     .opciones {
         text-align: center;
+        .visible {
+            display: none;
+        }
     }
 }

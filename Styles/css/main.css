@@ -608,5 +608,8 @@ footer .developers-container .developers .dev .github .fa-github {
 #rankings .opciones {
   text-align: center;
 }
+#rankings .opciones .visible {
+  display: none;
+}
 
 /*# sourceMappingURL=main.css.map */

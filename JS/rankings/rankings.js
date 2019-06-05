@@ -32,11 +32,13 @@ let mejoresPuntajes = [{
     puntajeJugada: 23
 }]
 
-for(let i = 0; i < mejoresPuntajes.length; i++) {
-    console.log(mejoresPuntajes[i].puntajeJugada);
-    console.log(mejoresPuntajes[i].nombreUsuario);
+let mostrarRanking = function(){
+    for (let i = 0; i < mejoresPuntajes.length; i++){
+        console.log(mejoresPuntajes[i].puntajeJugada);
+        console.log(mejoresPuntajes[i].nombreUsuario);
+    }
 }
-
+mostrarRanking();
 
 
 // ===================================================
