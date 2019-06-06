@@ -9,7 +9,7 @@
     <link rel="stylesheet"  href="../Styles/css/main.css">
     <title>Crear pregunta</title>
 </head>
-    <body id="crearPregunta">
+    <body>
         <!-- HEADER -->
         <header>
         <!-----------------------------------  BANNER   ----------------------------------->
@@ -28,36 +28,38 @@
                 <a class="menu-link" href="https://www.google.com.ar/"><i class="fas fa-sign-out-alt"></i>Salir</a>
             </nav>
         </header>
-        <h1>CREA TU PREGUNTA</h1>
-        <div class="container">
-            <!-- SELECCIONAR CATEGORIA -->
-            <div class="section">
-                <h2>Categoría</h2>
-                <select class="opcionesCategorias" id="categorias"></select>
+        <div id="crearPregunta">
+            <h1>CREA TU PREGUNTA</h1>
+            <div class="container">
+                <!-- SELECCIONAR CATEGORIA -->
+                <div class="section">
+                    <h2>Categoría</h2>
+                    <select class="opcionesCategorias" id="categorias"></select>
+                </div>
+                <!-- CREAR LA PREGUNTA -->
+                <div class="section">
+                    <h2>Pregunta</h2>
+                    <input type="text" placeholder="Ingresá tu pregunta" id="pregunta">
+                </div>
+                <!-- ESCRIBIR RESPUESTAS POSIBLES -->
+                <div class="section">
+                    <h2>Respuestas posibles</h2>
+                    <form class="respuestas" id="respuestasPosibles">
+                        <input type="text" placeholder="Ingresá una opción" id="respuesta1" onchange="mostrarRespuestas()">
+                        <input type="text" placeholder="Ingresá una opción" id="respuesta2" onchange="mostrarRespuestas()">
+                        <input type="text" placeholder="Ingresá una opción" id="respuesta3" onchange="mostrarRespuestas()">
+                        <input type="text" placeholder="Ingresá una opción" id="respuesta4" onchange="mostrarRespuestas()">
+                    </form>
+                </div>
+                <!-- SELECCIONAR LA RESPUESTA CORRECTA -->
+                <div class="section">
+                <h2>Respuesta correcta</h2>
+                    <select class="seleccionRespuestas" id="respuestaCorrecta"></select>
+                </div>
+                <!-- AGREGAR RESPUESTA A BASE DE DATOS -->
+                <div class="section">
+                    <button class="button_1" onclick="agregarPregunta()">AGREGAR</button>
             </div>
-            <!-- CREAR LA PREGUNTA -->
-            <div class="section">
-                <h2>Pregunta</h2>
-                <input type="text" placeholder="Ingresá tu pregunta" id="pregunta">
-            </div>
-            <!-- ESCRIBIR RESPUESTAS POSIBLES -->
-            <div class="section">
-                <h2>Respuestas posibles</h2>
-                <form class="respuestas" id="respuestasPosibles">
-                    <input type="text" placeholder="Ingresá una opción" id="respuesta1" onchange="mostrarRespuestas()">
-                    <input type="text" placeholder="Ingresá una opción" id="respuesta2" onchange="mostrarRespuestas()">
-                    <input type="text" placeholder="Ingresá una opción" id="respuesta3" onchange="mostrarRespuestas()">
-                    <input type="text" placeholder="Ingresá una opción" id="respuesta4" onchange="mostrarRespuestas()">
-                </form>
-            </div>
-            <!-- SELECCIONAR LA RESPUESTA CORRECTA -->
-            <div class="section">
-            <h2>Respuesta correcta</h2>
-                <select class="seleccionRespuestas" id="respuestaCorrecta"></select>
-            </div>
-            <!-- AGREGAR RESPUESTA A BASE DE DATOS -->
-            <div class="section">
-                <button class="button_1" onclick="agregarPregunta()">AGREGAR</button>
         </div>
         <!-- FOOTER -->
         <footer>

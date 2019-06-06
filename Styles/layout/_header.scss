@@ -32,5 +32,10 @@
     .fas {
         margin-right: 5px;
     }
+    .menu-link:hover {
+        cursor: pointer;
+        font-size: 20px;
+        transition: 0.5s;
+    }
 }
 

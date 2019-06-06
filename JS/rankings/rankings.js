@@ -7,19 +7,7 @@
 // =================================
 // 1.1 USUARIOS CON MEJORES PUNTAJES
 // =================================
-// Mostrar una lista de los usuarios (5) con más puntaje acumulado.
-// Requisitos: nombreUsuario, puntajeJugada.
-// puntaje 1, nombreUsuario
-// puntaje 2, nombreUsuario
-// puntaje 3, nombreUsuario
-// puntaje 4, nombreUsuario
-// puntaje 5, nombreUsuario
-
-// let infoUsario = {
-//     nombreUsuario = "",
-//     puntajeJugada = 0,
-//     competenciasGanadas = 0
-// }
+// Requisitos: traer nombreUsuario y puntajeJugada. Crear en la práginas de juego la variable "puntajeJugada".
 
 let puntajes = [{
     nombreUsuario: "Karen",
@@ -35,60 +23,87 @@ let puntajes = [{
     puntajeJugada: 30
 }]
 
-let mostrarRanking = function(){
+let obtenerRankingGeneral = function(){
+    let puesto = "";
     for (let i = 0; i < puntajes.length; i++){
-        console.log(puntajes[i].puntajeJugada);
-        console.log(puntajes[i].nombreUsuario);
-        // let puesto = {
-        //     puntaje: puntajes[i].puntajeJugada, 
-        //     usuario: puntajes[i].nombreUsuario,
-        // }
-        // return puesto[i];
+        puesto += `<p>${puntajes[i].nombreUsuario}, ${puntajes[i].puntajeJugada} PUNTOS</p>`;
     }
+    return puesto;
 }
-let rankingPuntajes = document.getElementById("rankingPuntajes");
-rankingPuntajes.innerHTML = mostrarRanking();
 
+let rankingGeneral = document.getElementById("rankingGeneral");
+rankingGeneral.innerHTML = obtenerRankingGeneral();
 
 // ===================================================
 // 1.2 MEJORES PUNTAJES POR CATEGORIA
 // ===================================================
-// Mostrar todas las categorías que hay, y por cada una los (5) mejores puntajes con sus respectivos usuarios.
-// Requisitos: nombreUsuario, puntaje, categoría.
+// Requisitos: traer categorías, nombreUsuario y puntajes de base de datos.
 
-// categoria 1
-// puntaje 1, nombreUsuario
-// puntaje 2, nombreUsuario
-// puntaje 3, nombreUsuario
-// puntaje 4, nombreUsuario
-// puntaje 5, nombreUsuario
-//
-// Idem para el resto de las categorías.
+let categorias = ["categoria1", "categoria2", "categoria3"];
+let puntajesCategoria = "";
+for(i = 0; i < categorias.length; i++){
+    puntajesCategoria = [{
+        nombreUsuario: "Karen",
+        puntajeJugada: 10,
+    }, {
+        nombreUsuario: "Ana",
+        puntajeJugada: 50,
+    }, {
+        nombreUsuario: "Nico",
+        puntajeJugada: 30,
+    }, {
+        nombreUsuario: "Diego",
+        puntajeJugada: 30
+    }]
+};
+let obtenerRankingCategorias = function(){
+    let puesto = "";
+    for (let i = 0; i < puntajesCategoria.length; i++){
+        puesto += `<p>${puntajes[i].nombreUsuario}, ${puntajes[i].puntajeJugada} PUNTOS</p>`;
+    }
+    return puesto;
+}
+let rankingCategorias = document.getElementById("rankingCategorias");
+rankingCategorias.innerHTML = obtenerRankingCategorias();
 
 // =========================================
 // 1.3 USUARIOS CON MAS COMPETENCIAS GANADAS
 // =========================================
-// Mostrar una lista de los (5) usuarios que más competencias ganaron.
-// Requisitos: sumar "1" cada vez que un usuario gana una competencia.
+// Requisitos de otras páginas: crear variable "competenciasGanadas" que sume "1" cada vez que un usuario gana una competencia.
 
-// XXXXX competencias ganadas, nombreUsuario
-// XXXX competencias ganadas, nombreUsuario
-// XXX competencias ganadas, nombreUsuario
-// XX competencias ganadas, nombreUsuario
-// X competencias ganadas, nombreUsuario
+let puntajesCompetencias = [{
+    nombreUsuario: "Karen",
+    competenciasGanadas: 10,
+}, {
+    nombreUsuario: "Ana",
+    competenciasGanadas: 50,
+}, {
+    nombreUsuario: "Nico",
+    competenciasGanadas: 30,
+}, {
+    nombreUsuario: "Diego",
+    competenciasGanadas: 30
+}]
 
+let obtenerRankingCompetencias = function(){
+    let puesto = "";
+    for (let i = 0; i < puntajesCompetencias.length; i++){
+        puesto += `<p>${puntajesCompetencias[i].nombreUsuario}, ${puntajesCompetencias[i].competenciasGanadas} PUNTOS</p>`;
+    }
+    return puesto;
+}
+let rankingCompetencias = document.getElementById("rankingCompetencias");
+rankingCompetencias.innerHTML = obtenerRankingCompetencias();
 
 // ==============================================
 // 2.1 CATEGORIAS CON MAYOR CANTIDAD DE PREGUNTAS
 // ==============================================
-// Mostrar una lista con las categorías que más preguntas tienen.
 // Requisitos: sumar "1" a la cantidad de preguntas que tiene cada categoría,
 // cada vez que un usuario crea una pregunta en determinada categoría. 
 
 // categoria1: cantidadPregCategoria1
-// categoria2: cantidadPregCategoria2
-// categoria3: cantidadPregCategoria3
-// categoria4: cantidadPregCategoria4
+
+
 
 // ==========================
 // 2.2 CATEGORIAS MAS VOTADAS

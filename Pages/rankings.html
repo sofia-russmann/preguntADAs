@@ -9,7 +9,7 @@
         <link rel="stylesheet"  href="../Styles/css/main.css">
         <title>Rankings</title>
     </head>
-    <body id="rankings">
+    <body>
         <!--HEADER-->
         <header>
         <!-----------------------------------  BANNER   ----------------------------------->
@@ -28,40 +28,48 @@
                 <a class="menu-link" href="https://www.google.com.ar/"><i class="fas fa-sign-out-alt"></i>Salir</a>
             </nav>
         </header>
-        <h1>RANKINGS</h1>
-        <div class="container">
-            <div class="usuarios">
-                <h2>Usuarios</h2>
-                <div class="opciones">
-                    <h3>Puntajes generales</h3>
-                        <div class="ranking" id="rankingPuntajes"></div>
-                    <h3>Puntajes por categorías</h3>
-                        <div class="ranking" id="rankingCategorias"></div>
-                    <h3>Competencias ganadas</h3>
-                        <div class="ranking" id="rankingCompetencias"></div>
+        <div id="rankings">
+            <h1>RANKINGS</h1>
+            <div class="container">
+                <div class="usuarios">
+                    <h2>Usuarios</h2>
+                    <div class="opciones">
+                        <div class="puntajes-generales">
+                            <h3>Puntajes generales</h3>
+                            <p id="rankingGeneral"></p>
+                        </div>
+                        <div class="competencias-ganadas">
+                            <h3>Competencias ganadas</h3>
+                            <p id="rankingCompetencias"></p>
+                        </div>
+                        <div class="puntajes-categorias">
+                            <h3>Puntajes por categorías</h3>
+                            <p id="rankingCategorias"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="categorias">
+                    <h2>Categorías</h2>
+                    <div class="opciones">
+                        <h3>Cantidad de preguntas</h3>
+                            <div class="ranking-preguntas" id="rankingPreguntas"></div>    
+                        <h3>Con mejor puntaje</h3>
+                            <div class="ranking-categorias" id="rankingCatVotadas"></div>  
+                    </div>
+                </div>
+                <div class="desafios">
+                    <h2>Desafíos</h2>
+                    <div class="opciones">
+                        <h3>Mejor puntuados</h3>
+                            <div class="ranking" id="rankingVotados"></div>
+                        <h3>Más jugados</h3>
+                            <div class="ranking" id="rankingJugados"></div>
+                        <h3>Más nuevos</h3>
+                            <div class="ranking" id="rankingNuevos"></div>
+                    </div>
                 </div>
             </div>
-            <div class="categorias">
-                <h2>Categorías</h2>
-                <div class="opciones">
-                    <h3>Cantidad de preguntas</h3>
-                        <div class="ranking" id="rankingPreguntas"></div>    
-                    <h3>Con mejor puntaje</h3>
-                        <div class="ranking" id="rankingCatVotadas"></div>  
-                </div>
-            </div>
-            <div class="desafios">
-                <h2>Desafíos</h2>
-                <div class="opciones">
-                    <h3>Mejor puntuados</h3>
-                        <div class="ranking" id="rankingVotados"></div>
-                    <h3>Más jugados</h3>
-                        <div class="ranking" id="rankingJugados"></div>
-                    <h3>Más nuevos</h3>
-                        <div class="ranking" id="rankingNuevos"></div>
-                </div>
-            </div>
-        </div>
+        </div> 
         <!-- FOOTER -->
         <footer>
             <h5 class="footer-text">Developed with <i class="fas fa-heart"></i> by</h5>
