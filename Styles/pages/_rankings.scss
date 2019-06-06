@@ -8,6 +8,10 @@
         font-family: $title-font;
         text-align: center;
     }
+    p {
+        margin: 10px;
+        color: $secondary-color;
+    }
     .container {
         width: 100%;
         display: flex; 
@@ -16,38 +20,65 @@
         text-align: center;
         font-family: $body-font;
         color: $main-color;
-        p {
-            color: $secondary-color;
-        }
-        @media (max-width: 750px) {
-            flex-direction: column;
-            align-items: center;
-        }
         .usuarios {
             display: flex;
             flex-direction: column;
-            width: 100%;
-            height: 500px;
-            
+            height: auto;
             padding: 10px;
             box-sizing: border-box;
             border-radius: 20px;
             background-image: $background-color;
-            .opciones {
-                width: 100%;
+            .opciones-usuarios {
+                width: auto;
                 display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                text-align: center;
+                flex-direction: column;
                 color: $main-color;
-                .puntajes-generales {
-                    width: 45%;
-                }
-                .competencias-ganadas {
-                    width: 45%;
+                .doble {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    @media (max-width: 750px) {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .puntajes-generales {
+                        width: 220px;
+                        margin-right: 100px;
+                        @media (max-width: 750px) {
+                            margin: 0;
+                        } 
+                    }
+                    .puntajes-generales:hover {
+                        cursor: pointer;
+                        color: $secondary-color;
+                        background-color: white;
+                        border-radius: 20px;
+                        transition: 0.5s;
+                    }
+                    .competencias-ganadas {
+                        width: 220px;
+                        margin-left: 100px;
+                        @media (max-width: 750px) {
+                            margin: 0;
+                        }
+                    }
+                    .competencias-ganadas:hover {
+                        cursor: pointer;
+                        color: $secondary-color;
+                        background-color: white;
+                        border-radius: 20px;
+                        transition: 0.5s;
+                    }
                 }
                 .puntajes-categorias {
-                    width: 90%;
+                    width: auto;
+                }
+                .puntajes-categorias:hover {
+                    cursor: pointer;
+                    color: $secondary-color;
+                    background-color: white;
+                    border-radius: 20px;
+                    transition: 0.5s;
                 }
             }
         }
@@ -55,25 +86,59 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100%;
-            margin-top: 10px;
+            width: auto;
+            height: 360px;
+            margin-top: 20px;
             padding: 10px;
             box-sizing: border-box;
             border-radius: 20px;
             color: $main-color;
             background-image: $background-color;
-            .opciones {
-                width: 100%;
+            @media (max-width: 750px) {
+                height: auto;
+            }
+            .opciones-categorias {
+                width: auto;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 text-align: center;
                 color: $main-color;
-                .ranking-preguntas {
-                    width: 45%;
+                @media (max-width: 750px) {
+                    flex-direction: column;
+                    align-items: center;
                 }
-                .ranking-categorias {
-                    width: 45%;
+                .cantidad-preguntas {
+                    width: 220px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 100px;
+                    @media (max-width: 750px) {
+                        margin: 0;
+                    }
+                }
+                .cantidad-preguntas:hover {
+                    cursor: pointer;
+                    color: $secondary-color;
+                    background-color: white;
+                    border-radius: 20px;
+                    transition: 0.5s;
+                }
+                .votos-categorias {
+                    width: 220px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 100px;
+                    @media (max-width: 750px) {
+                        margin: 0;
+                    }
+                }
+                .votos-categorias:hover {
+                    cursor: pointer;
+                    color: $secondary-color;
+                    background-color: white;
+                    border-radius: 20px;
+                    transition: 0.5s;
                 }
             }            
         }
@@ -81,18 +146,74 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100%;
-            margin-top: 10px;
+            width: auto;
+            height: 360px;
+            margin-top: 20px;
             padding: 10px;
             box-sizing: border-box;
             border-radius: 20px;
             color: $main-color;
             background-image: $background-color;
-            .ranking {
+            @media (max-width: 750px) {
+                height: auto;
+            }
+            .opciones-desafios {
+                width: auto;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
-            }
+                justify-content: space-between;
+                text-align: center;
+                color: $main-color;
+                @media (max-width: 750px) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .mas-votados {
+                    width: 220px;
+                    display: flex;
+                    flex-direction: column;
+                    @media (max-width: 750px) {
+                        margin: 0;
+                    }
+                }
+                .mas-votados:hover {
+                    cursor: pointer;
+                    color: $secondary-color;
+                    background-color: white;
+                    border-radius: 20px;
+                    transition: 0.5s;
+                }
+                .mas-jugados {
+                    width: 220px;
+                    display: flex;
+                    flex-direction: column;
+                    @media (max-width: 750px) {
+                        margin: 0;
+                    }
+                }
+                .mas-jugados:hover {
+                    cursor: pointer;
+                    color: $secondary-color;
+                    background-color: white;
+                    border-radius: 20px;
+                    transition: 0.5s;
+                }
+                .mas-nuevos {
+                    width: 220px;
+                    display: flex;
+                    flex-direction: column;
+                    @media (max-width: 750px) {
+                        margin: 0;
+                    }
+                }
+                .mas-nuevos:hover {
+                    cursor: pointer;
+                    color: $secondary-color;
+                    background-color: white;
+                    border-radius: 20px;
+                    transition: 0.5s;
+                }
+            }            
         }
     }
 }

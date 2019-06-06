@@ -20,8 +20,12 @@ let puntajes = [{
     puntajeJugada: 30,
 }, {
     nombreUsuario: "Diego",
-    puntajeJugada: 30
+    puntajeJugada: 30,
+}, {
+    nombreUsuario: "Pepe",
+    puntajeJugada: 50
 }]
+
 
 let obtenerRankingGeneral = function(){
     let puesto = "";
@@ -53,7 +57,10 @@ for(i = 0; i < categorias.length; i++){
         puntajeJugada: 30,
     }, {
         nombreUsuario: "Diego",
-        puntajeJugada: 30
+        puntajeJugada: 30,
+    }, {
+        nombreUsuario: "Pepe",
+        puntajeJugada: 50
     }]
 };
 let obtenerRankingCategorias = function(){
@@ -82,7 +89,10 @@ let puntajesCompetencias = [{
     competenciasGanadas: 30,
 }, {
     nombreUsuario: "Diego",
-    competenciasGanadas: 30
+    competenciasGanadas: 30,
+}, {
+    nombreUsuario: "Pepe",
+    competenciasGanadas: 50
 }]
 
 let obtenerRankingCompetencias = function(){
