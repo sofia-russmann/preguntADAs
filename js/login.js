@@ -1,34 +1,24 @@
-// INICIAR SESION
+// // INICIAR SESION
 
-<<<<<<< HEAD
-let usuariocorrecto = usuario === "adaitw"; //true
-let contraseñacorrecta = contraseña === "2019"; //true
-let resultado = usuariocorrecto && contraseñacorrecta; //true
 
-let actualizarloggueo = function (){
-    document.getElementById('pin').innerHTML = pin;
-}
 
 let resetearloggueo = function (){
     usuario = "";
     contraseña = "";
-    actualizarloggueo();
 }
 
-const verificarUsuario = function (usuario) {
-    usuario = prompt ("Ingrese el usuario");
-    actualizarloggueo();
-=======
-const verificarUsuario = function (usuario) {
->>>>>>> e3467d4cfcceeb0edd08b90a8f1d60ee0828660f
-//corroborar usuario
+const verificarUsuario = function () {
+    document.getElementById('username-login').innerHTML = username;
+    document.getElementById('username-login').style.display = 'none';
+    //corroborar usuario
 }
 
-const verificarContraseña = function (contraseña) {
-<<<<<<< HEAD
-    contraseña = prompt ("Ingrese la contraseña");
-    actualizarloggueo();
-//corroborar contraseña
+const verificarContraseña = function () {
+    document.getElementById('contraseña-login').innerHTML = contraseña;
+    document.getElementById('contraseña-login').style.display = 'none';
+
+
+    //corroborar contraseña
 }
 
 let chequearInicio = function (){
@@ -41,21 +31,44 @@ let chequearInicio = function (){
     }
 }
 
-=======
-//corroborar contraseña
-}
-
->>>>>>> e3467d4cfcceeb0edd08b90a8f1d60ee0828660f
 // REGISTRARSE 
 
-const obtenerUsuario = function (usuario){
-// guardar usuario en base de datos
+const obtenerNombre = function (){
+    document.getElementById('name').innerHTML = name;
+    document.getElementById('name').style.display = 'none';
+    
+    // guardar usuario en base de datos
 }
 
-const obtenerContraseña = function (contraseña){
-// guardar contraseña en base de datos
+const obtenerApellido = function () {
+    document.getElementById('surname').innerHTML = surname
+    document.getElementById('surname').style.display = 'none';
+    // guardar apellido en base de datos 
 }
 
-const obtenerApellido = function (apellido) {
-// guardar apellido en base de datos 
+const obtenerUsuario = function () {
+    document.getElementById('username').innerHTML = username
+    document.getElementById('username').style.display = 'none';
+    // guardar apellido en base de datos 
 }
+
+const obtenerContraseña = function (){
+    document.getElementById('password').innerHTML = password
+    document.getElementById('password').style.display = 'none';
+    // guardar contraseña en base de datos
+}
+
+
+
+// let cambiarAregistro = function (){
+//     document.getElementById("login").style.visibility = "hidden";
+//     document.getElementById("signup").style.visibility = "visible";
+// }
+
+// let cambiarAlogin = function (){
+//     document.getElementById("signup").style.visibility = "hidden";
+//     document.getElementById("login").style.visibility = "visible";
+// }
+
+
+

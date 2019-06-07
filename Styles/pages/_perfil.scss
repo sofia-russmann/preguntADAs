@@ -1,0 +1,107 @@
+#perfil {
+    font-family: $body-font;
+    .column-container{
+        display:flex;
+        margin: 5% auto;
+        width: 90%;
+        .personal-column{
+            width: 40%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            .avatar-container{
+                width:100%;
+                height:auto;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width:45%;
+                    border-radius:60%;
+                    display:flex;
+
+                }
+            }
+            .nickname , .puntaje, .siguiendo, .lesiguen, .estadisticas{
+                width:60%;
+                margin-top:15px;
+                margin-bottom:10px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .action-column{
+            width: 60%;
+            display:flex;
+            flex-direction: column;
+            .personaldiv{
+                height: 40%;
+                border-style: solid;
+                border-color:rgba(128, 128, 128, 0.808);
+            }
+            .actions-column{
+                display:flex;
+                .first-column{
+                    width:40%;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    margin-top: 5%;
+                    margin-left:5%;
+                    .jugar{
+                        border-style: double;
+                        width: 50%;
+                        padding: 3%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                .second-column{
+                    width: 60%;
+                    margin-top: 5%;
+                    margin-right:5%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .friend {
+                        display:flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        margin-bottom:4%;
+                        background-color: #d34a73;
+                        border-radius: 5%;
+                        .friend-avatar{
+                            width:100%;
+                            height:auto;
+                            display:flex;
+                            justify-content:center;
+                            img{
+                                width: 40%;
+                                height: 32%;
+                                margin: 3%;
+                            }
+                        }
+                        .interact {
+                            display:flex;
+                            flex-direction:column;
+                            justify-content:center;
+                            margin: 4%;
+                            .name {
+                                margin: 4%;
+                                display: flex;
+                                justify-content: center;
+                            }
+                            .interactive{
+                                border-style: double;
+                                padding:4%;
+                                display: flex;
+                                justify-content: center;
+                                margin: 4% 0 4% 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

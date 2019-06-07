@@ -1,10 +1,28 @@
-// colores
-$main-color: rgb(85, 212, 153);
-$secondary-color: rgb(134, 4, 151);
-$background-inputs: rgb(222, 197, 228);
 
+// colores
+$main-color: #504e4e;
+$secondary-color: #4f81aa;
+$background-color: linear-gradient(0deg,#FFCCCC ,#CCFFFF);
+
+$body-bg: #c1bdba;
+$form-bg: #ff3a75;
+$white: #ffffff;
+
+$main: #1ab188;
+$main-light: lighten($main,5%);
+$main-dark: darken($main,5%);
+
+$gray-light: #f8b6b6;
+$gray: #ddd;
 
 
 // fuentes
-$main-font: "verdana";
-$secondary-font: "lucida sans";
+$banner-font: 'Heebo', sans-serif;
+$title-font: 'Open Sans Condensed', sans-serif;
+$body-font: 'Raleway', sans-serif;
+
+
+$thin: 300;
+$normal: 400;
+$bold: 600;
+$br: 4px;
