@@ -337,7 +337,7 @@ template {
   display: none;
 }
 
-#banner {
+header #banner {
   width: 90%;
   display: flex;
   flex-flow: row nowrap;
@@ -348,15 +348,14 @@ template {
   background: linear-gradient(0deg, #FFCCCC, #CCFFFF);
   border-radius: 10px;
 }
-#banner .banner-text {
+header #banner .banner-text {
   font-family: "Heebo", sans-serif;
   font-size: 60px;
   color: #504e4e;
   display: flex;
   align-items: center;
 }
-
-#nav-bar {
+header #nav-bar {
   width: 90%;
   height: 20px;
   margin: 0 auto;
@@ -365,15 +364,15 @@ template {
   flex-direction: row;
   justify-content: space-around;
 }
-#nav-bar .menu-link {
+header #nav-bar .menu-link {
   font-family: "Raleway", sans-serif;
   color: #4f81aa;
   text-decoration: none;
 }
-#nav-bar .fas {
+header #nav-bar .fas {
   margin-right: 5px;
 }
-#nav-bar .menu-link:hover {
+header #nav-bar .menu-link:hover {
   cursor: pointer;
   font-size: 20px;
   transition: 0.5s;
