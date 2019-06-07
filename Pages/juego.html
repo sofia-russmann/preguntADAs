@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,54 +9,95 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Styles/main.css">
-    <script src="../JS/juego.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e5aa4cba17.js"></script>
+    
+    <script src="../JS/Juego/juego.js"></script>
 </head>
+
 <body>
     <header>
-
+        <!-----------------------------------  BANNER   ---------------------------------->
+        <div id="banner">
+            <h1 class="banner-text">preguntADAs</h1>
+        </div>
+        <!-----------------------------------  NAV BAR   ---------------------------------->
+        <nav id="nav-bar">
+            <a class="menu-link" href="#"><i class="fas fa-home"></i>Home</a>
+            <a class="menu-link" href=""><i class="fas fa-portrait"></i>Perfil</a>
+            <a class="menu-link" href=""><i class="fas fa-gamepad"></i>Juego</a>
+            <a class="menu-link" href=""><i class="fas fa-edit"></i>Crear pregunta</a>
+            <a class="menu-link" href=""><i class="fas fa-gavel"></i></i>Crear desafío</a>
+            <a class="menu-link" href=""><i class="fas fa-trophy"></i>Ranking</a>
+            <a class="menu-link" href=""><i class="fas fa-clipboard-list"></i>Notificaciones</a>
+            <a class="menu-link" href=""><i class="fas fa-sign-out-alt"></i>Salir</a>
+        </nav>
     </header>
-    <nav>
-        <ul class="nav-container">
-            <li class="nav-list"><a href="#">HOME</a></li>
-            <li class="nav-list"><a href="#">Perfil</a></li>
-            <li class="nav-list"><a href="#">Notificaciones</a></li>
-            <li class="nav-list"><a href="#">Ranking</a></li>
-            <li class="nav-list"><a href="#">aksdjakjd</a></li>
-        </ul>
-    </nav>
-    <main>
-    <div class="info-pregunta">
-        <div class="timer">
-            14-16
-        </div>
-        <div class="info-preg-list">
-            Categoría: Literatura.
-        </div>
-    <div class="principal-section">
-        <section id="perfil">
-                <img src="../Images/avatar.jpg">
-            <div class="info">
-                <ul>
-                    <li class="perfil-list">Usuarix: <p class="info-de-usuario">Anvorgesa.</p></li>
-                    <li class="perfil-list">Nivel: <p class="info-de-usuario">10</p></li>
-                    <li class="perfil-list">Ranking: <p class="info-de-usuario">#6</p></li>
-                    <li class="perfil-list">Online</li>
-                </ul>
+    <!--------------------------- SECCION PRINCIPAL -------------------------->
+    <main id="juego">
+        <!----------------------------------------------------------------------  
+                Sección información de las preguntas (cronómetro, categoría, datos) 
+            ------------------------------------------------------------------------>
+        <div class="info-pregunta">
+            <h1>Cronometro</h1>
+            <div id="counter">
+                0
             </div>
-        </section>
-    <div class="preguntas">
-        <h2 class="titulo-pregunta">Titulo pregunta</h2>
-        <ul>
-            <li class="lista-preguntas">Hola</li>
-            <li class="lista-preguntas">Hola</li>
-            <li class="lista-preguntas">Hola</li>
-            <li class="lista-preguntas">Hola</li>
-        </ul>
-    </div>
-    </div>
-    <div class="progress-bar">
-
-    </div>
-</main>
+            <div class="info-preg-list">
+                Categoría: 
+            </div>
+        </div>
+        <!----------------------------------------------------------------------  
+                        Perfil, selección de categorías y preguntas 
+        ------------------------------------------------------------------------>
+        <div class="principal-section">
+            <section id="perfil">
+                <div class="img-div">
+                    <img src="../Images/avatar.jpg" class="img-perfil">
+                    <div class="hover-perfil">
+                        <p>Nivel: 10</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <ul>
+                        <li class="perfil-list">Usuarix: <p class="info-de-usuario">Anvorgesa.</p>
+                        </li>
+                        <li class="perfil-list">Nivel: <p class="info-de-usuario">10</p>
+                        </li>
+                        <li class="perfil-list">Ranking: <p class="info-de-usuario">#6</p>
+                        </li>
+                        <li class="perfil-list">Online</li>
+                    </ul>
+                </div>
+            </section>
+            <!----------------------------------------------------------------------  
+                                        Selección de categorías 
+            ------------------------------------------------------------------------>
+             <div class="choosing-category">
+                    
+                <p onclick="mostrarJuego();" class="btn-start">Comenzar</p>
+                    
+            </div>
+            <!----------------------------------------------------------------------  
+                                Preguntas y respuestas a elegir 
+            ------------------------------------------------------------------------>
+            <div class="questions-container">
+                <div class="contenido-de-preg">
+                    <!--Contenido creado luego con JavaScript-->
+                </div>
+                <img src="../Images/arrow-right.png" class="arrow-btn" onclick="pasarPregunta();">
+            </div>
+        </div>
+        <!----------------------------------------------------------------------  
+                        Barra de progreso que se va completando 
+                        a medida que pasamos de preguntas 
+        ------------------------------------------------------------------------>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+    </main>
 </body>
+
 </html>

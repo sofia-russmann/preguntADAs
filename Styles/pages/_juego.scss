@@ -1,4 +1,4 @@
-/* CSS completo de la página de JUEGO.*/ 
+
 
 /* BODY */
 
@@ -6,32 +6,51 @@ body {
     padding: 0;
     width: 100%;
     max-width: 1500px;
+    height: 100%;
 }
 
         /* //////////////////////////
                 NAV
         ////////////////////////// */
-body {
-    nav {
-    display: flex;
-    justify-content: center;
-    font-family: 'Karla', sans-serif;
-    }
-}
-
-.nav-list {
-    list-style: none;
-    margin: 0 50px;
-    a {
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-}
-
-.nav-container {
-    display: flex;
-    flex-direction: row;
-}
+        #banner{
+            width: 90%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            margin: 0 auto;
+            margin-bottom: 25px;
+            height: 200px;  
+            background: linear-gradient(0deg,#FFCCCC ,#CCFFFF);
+            border-radius: 10px;
+        }
+        
+        .banner-text {
+            font-family: 'Heebo', sans-serif;
+            font-size: 60px;
+            color: #504e4e;
+            display: flex;
+            align-items: center;
+        }
+        
+        #nav-bar {
+            width: 90%;
+            height: 20px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        
+        .menu-link {
+            font-family: 'Raleway', sans-serif;
+            color: #4f81aa;
+            text-decoration: none;
+        }
+        
+        .fas {
+            margin-right: 5px;
+        }
 
 /* 
         ///////////////////////
@@ -39,25 +58,14 @@ body {
         //////////////////////
 */
 body {
-    main {
+    #juego {
         display: flex;
         flex-direction: column;
+        margin: 20px 100px;
     }
 }
 
-#perfil {
-    img {
-        width: 140px;
-        height: 120px;
-        border-radius: 50%;
-        margin: 0 auto;
-    }
-
-    display: flex;
-    flex-direction: column;
-    margin-right: 5%;
-    width: 300px;
-}
+/* PRINICPAL SECTION incluye todo lo que no incluye el timer */
 
 .principal-section {
     display: flex;
@@ -65,42 +73,228 @@ body {
     justify-content: center;
     margin-top: 50px;
     width: 100%;
+    padding-left: 50px;
 }
+
+/* TIMER */
+
+.counters {
+    h1 {
+        color: black;
+    }
+}
+
+/* INFO PREGUNTA */
 
 .info-pregunta {
     margin: 0 auto;
     text-align: center;
+    font-family: $font-juego;
 }
 
-.preguntas {
-    width: 700px;
+/* PERFIL */
+
+#perfil {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 400px;
+    border-radius: 30px;
+    border: 1px solid $border-color-jg;
+    margin-right: 20%;
+}
+
+/* Perfil hover */
+
+
+
+/* ---- */
+
+.img-div {
+    margin: 10px auto;
+}
+
+.img-perfil {
+    position: relative;
+        width: 140px;
+        height: 120px;
+        border-radius: 50%;
+
 }
 
 .perfil-list {
     list-style: none;
     margin-top: 10px;
     text-transform: uppercase;
-    font-family: 'Karla', sans-serif;
-}
-
-.lista-preguntas {
-    list-style: none;
-    margin: 10px auto;
-}
-
-.titulo-pregunta {
-    font-family: 'Rubik', sans-serif;
-}
-
-.info {
-    ul {
-        padding: 0;
-    }
+    font-family: $font-juego, sans-serif;
 }
 
 .info-de-usuario {
     font-family: 'Rubik', sans-serif;
     text-transform: lowercase;
+    margin-top: 0;
+}
+
+/* HOVER PERFIL */
+
+.hover-perfil {
+    background-color: white;
+    width: 140px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 10px auto;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.hover-perfil {
+    p {
+        position: absolute;
+        z-index: 1;
+        left: 30%;
+        top: 30%;
+    }
+}
+
+.img-div:hover .hover-perfil{
+    visibility: visible;
+    opacity: 0.7; 
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: .8s;
+}
+
+/* ELIGIENDO CATEGORÍA DE PREGUNTAS */
+
+.choosing-category {
+        width: 700px;
+        display: flex;
+        justify-content: center;
+}
+
+.btn-start {
+    width: 200px;
+    height: 40px;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 15px; 
+    background-color: $white-color;
+    color: $background-color-btnjg;
+    border: 1px solid $background-color-btnjg;
+    box-shadow: none;
+    border-radius: 15px;
+    font-family: $font-juego, sans-serif;
+    text-align: center;
+    line-height: 38px;
+    transform: translateX(-80%);
+}
+
+    .btn-start:hover {
+    background-color: $background-color-btnjg;
+    color: $white-color;
+    transition: all .6s ease 0s;
+    }
+
+.choosing-category {
+    p:nth-last-of-type(2) {
+        float: left;
+        clear: both;
+    }
 }
 
 
+/* CONTENIDO DE PREGUNTAS */
+
+.lista-preguntas {
+    width: 200px;
+    height: 40px;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 15px; 
+    background-color: $white-color;
+    color: $background-color-btnjg;
+    border: 1px solid $background-color-btnjg;
+    box-shadow: none;
+    border-radius: 15px;
+    font-family: $font-juego, sans-serif;
+}
+
+.lista-preguntas:hover {
+    background-color: $background-color-btnjg;
+    color: $white-color;
+    transition: all .6s ease 0s;
+} 
+
+
+
+
+
+.question-title {
+    font-family: 'Rubik', sans-serif;
+    color: $white-color;
+    background-color: $background-title-jg;
+    font-size: 30px;
+    padding: 7px;
+}
+
+.info {
+    text-align: center;
+    ul {
+        padding: 0;
+    }
+}
+
+.contenido-de-preg {
+    display: flex;
+    flex-direction: column;
+    margin-left: -20%;
+}
+
+.questions-container {
+    margin-top: -20px;
+    width: 700px;
+    display: flex; 
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 10px;
+    left: 600px;
+    margin-left: 20px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.contenido-de-preg {
+    ul {
+        padding: 0;
+
+    }
+}
+
+/* ARROW */
+
+.arrow-btn {
+    width: 20px;
+    transform: translate(2000%, 550%);
+    position: absolute;
+}
+
+/* PROGRESS BAR */
+
+.progress-bar {
+    width: 506px;
+    height: 26px;
+    border:  1px solid $background-title-jg ;
+    border-radius: 13px;
+    padding-top: 3px;
+    padding-left: 5px;
+    margin: 30px auto;
+    transform: translate(103px, -61px);
+}
+
+.progress {
+    width: 25px;
+    height: 22px;
+    border-radius: 10px;
+    background-color: $background-color-btnjg;
+}
