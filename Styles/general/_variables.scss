@@ -1,7 +1,22 @@
+
 // colores
 $main-color: #504e4e;
 $secondary-color: #4f81aa;
 $background-color: linear-gradient(0deg,#FFCCCC ,#CCFFFF);
+<<<<<<< HEAD
+=======
+
+$body-bg: #c1bdba;
+$form-bg: #ff3a75;
+$white: #ffffff;
+
+$main: #1ab188;
+$main-light: lighten($main,5%);
+$main-dark: darken($main,5%);
+
+$gray-light: #f8b6b6;
+$gray: #ddd;
+>>>>>>> 2f43f5888d293faaf807154c51bb67d605297854
 
 
 // fuentes
@@ -9,3 +24,11 @@ $banner-font: 'Heebo', sans-serif;
 $title-font: 'Open Sans Condensed', sans-serif;
 $body-font: 'Raleway', sans-serif;
 
+<<<<<<< HEAD
+=======
+
+$thin: 300;
+$normal: 400;
+$bold: 600;
+$br: 4px;
+>>>>>>> 2f43f5888d293faaf807154c51bb67d605297854
