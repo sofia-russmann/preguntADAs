@@ -1,36 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet"  href="../Styles/css/main.css">
-    <title>Rankings</title>
-</head>
-<body>
-    <div class="rankings-container">
-        <h1>Rankings</h1>
-        <div class="rankings-usuarios">
-            <h2 onclick="">Usuarios</h2>
-            <div class="visible">
-                <h3 onclick="">Puntajes generales</h3>
-                <h3 onclick="">Puntajes por categorías</h3>
-                <h3 onclick="">Competencias ganadas</h3>
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e5aa4cba17.js"></script>
+        <link rel="stylesheet"  href="../Styles/css/main.css">
+        <title>Rankings</title>
+    </head>
+    <body>
+        <!--HEADER-->
+        <header>
+        <!-----------------------------------  BANNER   ----------------------------------->
+            <div id="banner">
+                <h1 class="banner-text">preguntADAs</h1>
             </div>
-        </div>
-        <div class="rankings-categorias">
-            <h2>Categorías</h2>
-            <div class="visible">
-                <h3 onclick="">Cantidad de preguntas</h3>
-                <h3 onclick="">Con mejor puntaje</h3>
+        <!-----------------------------------  NAV BAR   ---------------------------------->
+            <nav id="nav-bar">
+                <a class="menu-link" href="../index.html"><i class="fas fa-home"></i>Home</a>
+                <a class="menu-link" href="perfil.html"><i class="fas fa-portrait"></i>Perfil</a>
+                <a class="menu-link" href="juego.html"><i class="fas fa-gamepad"></i>Juego</a>
+                <a class="menu-link" href="crearpregunta.html"><i class="fas fa-edit"></i>Crear pregunta</a>
+                <a class="menu-link" href="creardesafio.html"><i class="fas fa-gavel"></i></i>Crear desafío</a>
+                <a class="menu-link" href="rankings.html"><i class="fas fa-trophy"></i>Ranking</a>
+                <a class="menu-link" href="notificaciones.html"><i class="fas fa-clipboard-list"></i>Notificaciones</a>
+                <a class="menu-link" href="https://www.google.com.ar/"><i class="fas fa-sign-out-alt"></i>Salir</a>
+            </nav>
+        </header>
+        <div id="rankings">
+            <h1>RANKINGS</h1>
+            <div class="container">
+                <div class="usuarios">
+                    <h2>Usuarios</h2>
+                    <div class="opciones-usuarios">
+                        <div class="doble">
+                            <div class="puntajes-generales">
+                                <h3>Puntajes generales</h3>
+                                <p id="rankingGeneral"></p>
+                            </div>
+                            <div class="competencias-ganadas">
+                                <h3>Competencias ganadas</h3>
+                                <p id="rankingCompetencias"></p>
+                            </div>
+                        </div>
+                        <div class="puntajes-categorias">
+                            <h3>Puntajes por categorías</h3>
+                            <p id="rankingCategorias"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="categorias">
+                    <h2>Categorías</h2>
+                    <div class="opciones-categorias">
+                        <div class="cantidad-preguntas">
+                            <h3>Cantidad de preguntas</h3>
+                            <p id="rankingPreguntas">a</p> 
+                            <p id="rankingPreguntas">a</p>
+                            <p id="rankingPreguntas">a</p>
+                            <p id="rankingPreguntas">a</p>
+                            <p id="rankingPreguntas">a</p>   
+                        </div>
+                        <div class="votos-categorias">
+                            <h3>Más votadas</h3>
+                            <p id="rankingCatVotadas">b</p> 
+                            <p id="rankingCatVotadas">b</p>
+                            <p id="rankingCatVotadas">b</p>
+                            <p id="rankingCatVotadas">b</p>
+                            <p id="rankingCatVotadas">b</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="desafios">
+                    <h2>Desafíos</h2>
+                    <div class="opciones-desafios">
+                        <div class="mas-votados">
+                            <h3>Más votados</h3>
+                            <p id="rankingVotados">c</p>
+                            <p id="rankingVotados">c</p>
+                            <p id="rankingVotados">c</p>
+                            <p id="rankingVotados">c</p>
+                            <p id="rankingVotados">c</p>
+                        </div>
+                        <div class="mas-jugados">
+                            <h3>Más jugados</h3>
+                            <p id="rankingJugados">d</p>
+                            <p id="rankingJugados">d</p>
+                            <p id="rankingJugados">d</p>
+                            <p id="rankingJugados">d</p>
+                            <p id="rankingJugados">d</p>
+                        </div>
+                        <div class="mas-nuevos">
+                            <h3>Más nuevos</h3>
+                            <p id="rankingNuevos">e</p>
+                            <p id="rankingNuevos">e</p>
+                            <p id="rankingNuevos">e</p>
+                            <p id="rankingNuevos">e</p>
+                            <p id="rankingNuevos">e</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="rankings-desafios">
-            <h2 onclick="">Desafíos</h2>
-            <div class="visible">
-                <h3 onclick="">Mejor puntuados</h3>
-                <h3 onclick="">Más jugados</h3>
-                <h3 onclick="">Más nuevos</h3>
-            </div>
-        </div>
-    </div>
-</body>
+        </div> 
+        <!-- FOOTER -->
+        <footer>
+            <h5 class="footer-text">Developed with <i class="fas fa-heart"></i> by</h5>
+            <div class="developers-container">
+                <ul class="developers">
+                    <li class="dev">
+                        <img src="../Images/karen.jpg" alt="avatar karen burdman" class="dev-avatar">
+                        <h6 class="dev-name">Karen Burdman</h6>
+                        <a href="https://www.linkedin.com/in/karen-burdman-0482ba39/" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <a href="https://github.com/Karen1311" class="github"><i class="fab fa-github"></i>GitHub</a>
+                            </li>
+                            <li class="dev">
+                                <img src="../Images/paula.jpg" alt="avatar paula coronel" class="dev-avatar">
+                                <h6 class="dev-name">Paula Coronel</h6>
+                                <a href="https://www.linkedin.com/in/paula-coronel-it/" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                                <a href="https://github.com/PauCoronel" class="github"><i class="fab fa-github"></i>GitHub</a>
+                            </li>
+                            <li class="dev">
+                                <img src="../Images/peu.jpg" alt="avatar paula illanes" class="dev-avatar">
+                                <h6 class="dev-name">Paula Illanes</h6>
+                                <a href="https://www.linkedin.com/in/paula-illanes-romina/" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                                <a href="https://github.com/nicthema" class="github"><i class="fab fa-github"></i>GitHub</a>
+                            </li>
+                            <li class="dev">
+                                <img src="../Images/sofi.jpg" alt="avatar sofía russmann" class="dev-avatar">
+                                <h6 class="dev-name">Sofía Russmann</h6>
+                                <a href="https://www.linkedin.com/in/sof%C3%ADa-russmann-393754172/" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                                <a href="https://github.com/sorussmann/" class="github"><i class="fab fa-github"></i>GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+        </footer>
+        <script src="../JS/rankings.js"></script>
+    </body>
 </html>

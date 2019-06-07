@@ -1,0 +1,44 @@
+header {
+    #banner {
+        width: 90%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        height: 200px;  
+        background: linear-gradient(0deg,#FFCCCC ,#CCFFFF);
+        border-radius: 10px;
+        .banner-text {
+            font-family: 'Heebo', sans-serif;
+            font-size: 60px;
+            color: #504e4e;
+            display: flex;
+            align-items: center;
+        }
+    }
+    #nav-bar {
+        width: 90%;
+        height: 20px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .menu-link {
+            font-family: 'Raleway', sans-serif;
+            color: #4f81aa;
+            text-decoration: none;
+        }
+        .fas {
+            margin-right: 5px;
+        }
+        .menu-link:hover {
+            cursor: pointer;
+            font-size: 20px;
+            transition: 0.5s;
+        }
+    }
+}
+
+
