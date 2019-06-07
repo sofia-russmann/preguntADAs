@@ -1,72 +1,74 @@
-h1 {
-    font-family: $main-font;
-    color: $main-color;
-    font-size: 34px;
-    line-height: 38px;
-    margin: 0px;
-}
-
-h2 {
-    font-family: $secondary-font;
-    color: $secondary-color;
-    font-size: 24px;
-    line-height: 28px;
-    margin: 10px;
-}
-
-.crear-pregunta-container {
+#crearPregunta {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 900px;
-    margin-bottom: 10px;
-    color: $main-color;
-}
-
-.crear-pregunta-parcial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 700px;
-    margin: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    color: $main-color;
-}
-
-.crear-pregunta-opciones {
-    background-color: $background-inputs;
-}
-
-.respuestas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 700px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    color: $secondary-color;
-}
-
-input {
-    width: 600px;
-    height: 40px;
-    padding: 5px;
-    margin: 5px;
-    box-sizing: border-box;
-    background-color: $background-inputs;
-    border-radius: 5px;
-    box-shadow: 0;
-    font: $secondary-font;
-}
-
-select {
-    width: 600px;
-    height: 40px;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font: $secondary-font;
+    width: 100%;
+    h1 {
+        font-family: $title-font;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        color: $main-color;
+        font-family: $body-font;
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            h2 {
+                font-size: 24px;
+            }
+            h2:hover {
+                cursor: pointer;
+                color: $secondary-color;
+                transition: 0.5s;
+            }
+            .opcionesCategorias {
+                display: flex;
+            }
+            .respuestas {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .seleccionRespuestas {
+                display: flex;
+                flex-direction: column;
+            }
+            select {
+                width: 100%;
+                height: 40px;
+                padding: 5px;
+                margin: 5px 0;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            input {
+                width: 100%;
+                height: 40px;
+                padding: 5px;
+                margin: 5px 0;
+                box-sizing: border-box;
+                border-radius: 5px;
+                border: 1px solid #a9a9a9;
+            }
+            .button_k {
+                color: black;
+                font-family: $title-font;
+                font-size: 32px;
+                font-weight: bold;
+                background: $background-color;
+                border: 1px solid #a9a9a9;
+                border-radius: 5px;
+                width: 120px;
+                height: 60px;
+            }
+        }
+    }
 }

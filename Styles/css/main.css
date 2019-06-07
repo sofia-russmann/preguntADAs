@@ -337,123 +337,476 @@ template {
   display: none;
 }
 
-h1 {
-  font-family: "verdana";
-  color: #55d499;
-  font-size: 34px;
-  line-height: 38px;
-  margin: 0px;
-}
-
-h2 {
-  font-family: "lucida sans";
-  color: #860497;
-  font-size: 24px;
-  line-height: 28px;
-  margin: 10px;
-}
-
-.crear-pregunta-container {
+header #banner {
+  width: 90%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 900px;
-  margin-bottom: 10px;
-  color: #55d499;
-}
-
-.crear-pregunta-parcial {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 700px;
-  margin: 10px;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 20px;
-  color: #55d499;
-}
-
-.crear-pregunta-opciones {
-  background-color: #dec5e4;
-}
-
-.respuestas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 700px;
-  box-sizing: border-box;
-  border-radius: 20px;
-  color: #860497;
-}
-
-input {
-  width: 600px;
-  height: 40px;
-  padding: 5px;
-  margin: 5px;
-  box-sizing: border-box;
-  background-color: #dec5e4;
-  border-radius: 5px;
-  box-shadow: 0;
-  font: "lucida sans";
-}
-
-select {
-  width: 600px;
-  height: 40px;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px;
-  box-sizing: border-box;
-  font: "lucida sans";
-}
-
-.rankings-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: row nowrap;
   justify-content: center;
-  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  height: 200px;
+  background: linear-gradient(0deg, #FFCCCC, #CCFFFF);
+  border-radius: 10px;
+}
+header #banner .banner-text {
+  font-family: "Heebo", sans-serif;
+  font-size: 60px;
+  color: #504e4e;
+  display: flex;
+  align-items: center;
+}
+header #nav-bar {
+  width: 90%;
+  height: 20px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header #nav-bar .menu-link {
+  font-family: "Raleway", sans-serif;
+  color: #4f81aa;
+  text-decoration: none;
+}
+header #nav-bar .fas {
+  margin-right: 5px;
+}
+header #nav-bar .menu-link:hover {
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+footer {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+footer .footer-text {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  margin: auto;
+  background-color: #fff9fa;
+  border-radius: 10px 10px 0px 0px;
+  font-family: "Raleway", sans-serif;
+  color: #504e4e;
+}
+footer .fa-heart {
+  margin: 2px 10px 0px 10px;
+}
+footer .developers-container {
+  display: flex;
+  width: 90%;
+  margin-top: 20px;
+  margin: auto;
+  justify-content: center;
+  background-color: #fff9fa;
+  border-radius: 0px 0px 10px 10px;
+}
+footer .developers-container .developers {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  list-style: none;
+}
+footer .developers-container .developers .dev {
+  display: flex;
+  flex-direction: column;
+}
+footer .developers-container .developers .dev .dev-avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+footer .developers-container .developers .dev .dev-name {
+  margin: auto;
   margin-bottom: 10px;
-  color: #55d499;
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+  color: #504e4e;
+}
+footer .developers-container .developers .dev .linkedin {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: gray;
+  font-size: 12px;
+  margin-left: 17px;
+}
+footer .developers-container .developers .dev .linkedin .fa-linkedin {
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+footer .developers-container .developers .dev .github {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: gray;
+  font-size: 12px;
+  margin-left: 17px;
+}
+footer .developers-container .developers .dev .github .fa-github {
+  margin-right: 5px;
+  margin-bottom: 3px;
 }
 
-.rankings-usuarios {
+#banner {
+  width: 90%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  height: 200px;
+  background: linear-gradient(0deg, #FFCCCC, #CCFFFF);
+  border-radius: 10px;
+}
+
+.banner-text {
+  font-family: "Heebo", sans-serif;
+  font-size: 60px;
+  color: #504e4e;
+  display: flex;
+  align-items: center;
+}
+
+#nav-bar {
+  width: 90%;
+  height: 20px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu-link {
+  font-family: "Raleway", sans-serif;
+  color: #4f81aa;
+  text-decoration: none;
+}
+
+.fas {
+  margin-right: 5px;
+}
+
+#crearPregunta {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#crearPregunta h1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+}
+#crearPregunta .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 700px;
-  margin: 10px;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 20px;
-  color: #55d499;
+  width: 100%;
+  color: #504e4e;
+  font-family: "Raleway", sans-serif;
 }
-
-.rankings-categorias {
+#crearPregunta .container .section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 700px;
+  width: 50%;
   margin: 10px;
   padding: 10px;
   box-sizing: border-box;
-  border-radius: 20px;
-  color: #55d499;
+}
+#crearPregunta .container .section h2 {
+  font-size: 24px;
+}
+#crearPregunta .container .section h2:hover {
+  cursor: pointer;
+  color: #4f81aa;
+  transition: 0.5s;
+}
+#crearPregunta .container .section .opcionesCategorias {
+  display: flex;
+}
+#crearPregunta .container .section .respuestas {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#crearPregunta .container .section .seleccionRespuestas {
+  display: flex;
+  flex-direction: column;
+}
+#crearPregunta .container .section select {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+#crearPregunta .container .section input {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #a9a9a9;
+}
+#crearPregunta .container .section .button_k {
+  color: black;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(0deg, #FFCCCC, #CCFFFF);
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  width: 120px;
+  height: 60px;
 }
 
-.rankings-desafios {
+#rankings {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+#rankings h1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+}
+#rankings p {
+  margin: 10px;
+  color: #4f81aa;
+}
+#rankings .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: #504e4e;
+}
+#rankings .container .usuarios {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-image: linear-gradient(0deg, #FFCCCC, #CCFFFF);
+}
+#rankings .container .usuarios .opciones-usuarios {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  color: #504e4e;
+}
+#rankings .container .usuarios .opciones-usuarios .doble {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (max-width: 750px) {
+  #rankings .container .usuarios .opciones-usuarios .doble {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#rankings .container .usuarios .opciones-usuarios .doble .puntajes-generales {
+  width: 220px;
+  margin-right: 100px;
+}
+@media (max-width: 750px) {
+  #rankings .container .usuarios .opciones-usuarios .doble .puntajes-generales {
+    margin: 0;
+  }
+}
+#rankings .container .usuarios .opciones-usuarios .doble .puntajes-generales:hover {
+  cursor: pointer;
+  color: #4f81aa;
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+#rankings .container .usuarios .opciones-usuarios .doble .competencias-ganadas {
+  width: 220px;
+  margin-left: 100px;
+}
+@media (max-width: 750px) {
+  #rankings .container .usuarios .opciones-usuarios .doble .competencias-ganadas {
+    margin: 0;
+  }
+}
+#rankings .container .usuarios .opciones-usuarios .doble .competencias-ganadas:hover {
+  cursor: pointer;
+  color: #4f81aa;
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+#rankings .container .usuarios .opciones-usuarios .puntajes-categorias {
+  width: auto;
+}
+#rankings .container .usuarios .opciones-usuarios .puntajes-categorias:hover {
+  cursor: pointer;
+  color: #4f81aa;
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+#rankings .container .categorias {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 700px;
-  margin: 10px;
+  width: auto;
+  height: 360px;
+  margin-top: 20px;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 20px;
-  color: #55d499;
+  color: #504e4e;
+  background-image: linear-gradient(0deg, #FFCCCC, #CCFFFF);
+}
+@media (max-width: 750px) {
+  #rankings .container .categorias {
+    height: auto;
+  }
+}
+#rankings .container .categorias .opciones-categorias {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  color: #504e4e;
+}
+@media (max-width: 750px) {
+  #rankings .container .categorias .opciones-categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#rankings .container .categorias .opciones-categorias .cantidad-preguntas {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+@media (max-width: 750px) {
+  #rankings .container .categorias .opciones-categorias .cantidad-preguntas {
+    margin: 0;
+  }
+}
+#rankings .container .categorias .opciones-categorias .cantidad-preguntas:hover {
+  cursor: pointer;
+  color: #4f81aa;
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+#rankings .container .categorias .opciones-categorias .votos-categorias {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+@media (max-width: 750px) {
+  #rankings .container .categorias .opciones-categorias .votos-categorias {
+    margin: 0;
+  }
+}
+#rankings .container .categorias .opciones-categorias .votos-categorias:hover {
+  cursor: pointer;
+  color: #4f81aa;
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+#rankings .container .desafios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: 360px;
+  margin-top: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: #504e4e;
+  background-image: linear-gradient(0deg, #FFCCCC, #CCFFFF);
+}
+@media (max-width: 750px) {
+  #rankings .container .desafios {
+    height: auto;
+  }
+}
+#rankings .container .desafios .opciones-desafios {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  color: #504e4e;
+}
+@media (max-width: 750px) {
+  #rankings .container .desafios .opciones-desafios {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#rankings .container .desafios .opciones-desafios .mas-votados {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 750px) {
+  #rankings .container .desafios .opciones-desafios .mas-votados {
+    margin: 0;
+  }
+}
+#rankings .container .desafios .opciones-desafios .mas-votados:hover {
+  cursor: pointer;
+  color: #4f81aa;
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+#rankings .container .desafios .opciones-desafios .mas-jugados {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 750px) {
+  #rankings .container .desafios .opciones-desafios .mas-jugados {
+    margin: 0;
+  }
+}
+#rankings .container .desafios .opciones-desafios .mas-jugados:hover {
+  cursor: pointer;
+  color: #4f81aa;
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+#rankings .container .desafios .opciones-desafios .mas-nuevos {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 750px) {
+  #rankings .container .desafios .opciones-desafios .mas-nuevos {
+    margin: 0;
+  }
+}
+#rankings .container .desafios .opciones-desafios .mas-nuevos:hover {
+  cursor: pointer;
+  color: #4f81aa;
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=main.css.map */
