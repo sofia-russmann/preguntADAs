@@ -1,10 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>PERFIL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e5aa4cba17.js"></script>
 </head>
+
 <body>
-    <script type="text/javascript" src ="../Layout/perfil/perfil.js"></script>
+    <header id="nav">
+        <!-----------------------------------  BANNER   ---------------------------------->
+        <div id="banner">
+            <h1 class="banner-text">preguntADAs</h1>
+        </div>
+        <!-----------------------------------  NAV BAR   ---------------------------------->
+        <nav>
+            <a class="menu-link" href="#"><i class="fas fa-home"></i>Home</a>
+            <a class="menu-link" href=""><i class="fas fa-portrait"></i>Perfil</a>
+            <a class="menu-link" href=""><i class="fas fa-gamepad"></i>Juego</a>
+            <a class="menu-link" href=""><i class="fas fa-edit"></i>Crear pregunta</a>
+            <a class="menu-link" href=""><i class="fas fa-gavel"></i></i>Crear desafío</a>
+            <a class="menu-link" href=""><i class="fas fa-trophy"></i>Ranking</a>
+            <a class="menu-link" href=""><i class="fas fa-clipboard-list"></i>Notificaciones</a>
+            <a class="menu-link" href=""><i class="fas fa-sign-out-alt"></i>Salir</a>
+        </nav>
+    </header>
+    <div id="perfil">
+        <div class="column-container">
+            <div class="personal-column">
+                <div class="avatar-container">
+                    <img src="../Images/avatar3.png">
+                </div>
+                <div class="nickname">@Ada</div>
+                <div class="puntaje">500 puntos</div>
+                <div class="siguiendo">Siguiendo: 10 </div>
+                <div class="lesiguen">Le siguen: 10</div>
+                <div class="estadisticas">Estadísticas</div>
+            </div>
+            <div class="action-column">
+                <div class="personaldiv">Sobre mi... </div>
+                <div class="actions-column">
+                    <div class="first-column">
+                        <div class="jugar">Preguntas</div>
+                        <div class="jugar">Desafíos</div>
+                        <div class="jugar">Competencias</div>
+                    </div>
+                    <div class="second-column">
+                        <div class="friend">
+                            <div class="friend-avatar">
+                                <img src="../Images/avatar1.png">
+                            </div>
+                            <div class="interact">
+                                <div class="name">ADA</div>
+                                <div class="interactive">Seguir</div>
+                                <div class="interactive">Desafiar</div>
+                                <div class="interactive">Competir</div>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div class="friend-avatar">
+                                <img src="../Images/avatar5.png">
+                            </div>
+                            <div class="interact">
+                                <div class="name">ADA</div>
+                                <div class="interactive">Seguir</div>
+                                <div class="interactive">Desafiar</div>
+                                <div class="interactive">Competir</div>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div class="friend-avatar">
+                                <img src="../Images/avatar2.png">
+                            </div>
+                            <div class="interact">
+                                <div class="name">ADA</div>
+                                <div class="interactive">Seguir</div>
+                                <div class="interactive">Desafiar</div>
+                                <div class="interactive">Competir</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h5 class="footer-text">Developed with <i class="fas fa-heart"></i> by</h5>
+        <div class="developers-container">
+            <ul class="developers">
+                <li class="dev">
+                    <img src="karen.jpg" alt="avatar karen burdman" class="dev-avatar">
+                    <h6 class="dev-name">Karen Burdman</h6>
+                    <a href="https://www.linkedin.com/in/karen-burdman-0482ba39/" class="linkedin"><i
+                            class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/Karen1311" class="github"><i class="fab fa-github"></i>GitHub</a>
+                </li>
+                <li class="dev">
+                    <img src="paula.jpg" alt="avatar paula coronel" class="dev-avatar">
+                    <h6 class="dev-name">Paula Coronel</h6>
+                    <a href="https://www.linkedin.com/in/paula-coronel-it/" class="linkedin"><i
+                            class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/PauCoronel" class="github"><i class="fab fa-github"></i>GitHub</a>
+                </li>
+                <li class="dev">
+                    <img src="peu.jpg" alt="avatar paula illanes" class="dev-avatar">
+                    <h6 class="dev-name">Paula Illanes</h6>
+                    <a href="https://www.linkedin.com/in/paula-illanes-romina/" class="linkedin"><i
+                            class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/nicthema" class="github"><i class="fab fa-github"></i>GitHub</a>
+                </li>
+                <li class="dev">
+                    <img src="sofi.jpg" alt="avatar sofía russmann" class="dev-avatar">
+                    <h6 class="dev-name">Sofía Russmann</h6>
+                    <a href="https://www.linkedin.com/in/sof%C3%ADa-russmann-393754172/" class="linkedin"><i
+                            class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/sorussmann/" class="github"><i class="fab fa-github"></i>GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../js/perfil.js"></script>
 </body>
+
 </html>
