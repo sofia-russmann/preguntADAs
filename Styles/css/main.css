@@ -450,44 +450,238 @@ footer .developers-container .developers .dev .github .fa-github {
   margin-bottom: 3px;
 }
 
-#banner {
+#index-container {
+  width: 100%;
+}
+#index-container .main-container {
   width: 90%;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  flex-wrap: wrap;
   margin: 0 auto;
-  margin-bottom: 25px;
+}
+#index-container .main-container .primary-container {
+  display: inline-flex;
+  width: 90%;
+  margin: 0 auto;
   height: 200px;
-  background: linear-gradient(0deg, #FFCCCC, #CCFFFF);
-  border-radius: 10px;
 }
-
-.banner-text {
-  font-family: "Heebo", sans-serif;
-  font-size: 60px;
-  color: #504e4e;
-  display: flex;
-  align-items: center;
-}
-
-#nav-bar {
+#index-container .main-container .primary-container .img-container {
   width: 90%;
-  height: 20px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  height: 200px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
-
-.menu-link {
+#index-container .main-container .primary-container .img-container #avatar-img {
+  width: 150px;
+  height: 150px;
+}
+#index-container .main-container .primary-container .user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+#index-container .main-container .main-subcontainer {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+#index-container .main-container .main-subcontainer .secondary-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+  align-content: center;
+}
+#index-container .main-container .main-subcontainer .secondary-container .btn-home {
   font-family: "Raleway", sans-serif;
-  color: #4f81aa;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 60%;
+  height: 80px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #d591e1;
+  border: 1px solid #c47bd0;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
   text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 2.5;
+}
+#index-container .main-container .main-subcontainer .tertiary-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-content: center;
+}
+#index-container .main-container .main-subcontainer .tertiary-container #aside-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+#index-container .main-container .main-subcontainer .tertiary-container #aside-content .aside-title {
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  color: #504e4e;
+}
+#index-container .main-container .main-subcontainer .tertiary-container #aside-content #addTitle {
+  margin-left: 20px;
+  margin-top: 0px;
+}
+#index-container .main-container .main-subcontainer .tertiary-container #aside-content #addDescription {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+#index-container .main-container .main-subcontainer .tertiary-container #aside-content #addQuestions {
+  margin-left: 20px;
 }
 
-.fas {
-  margin-right: 5px;
+#creardesafio-container {
+  width: 100%;
+}
+#creardesafio-container .main-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+#creardesafio-container .main-container .primary-container {
+  display: inline-flex;
+  width: 90%;
+  margin: 0 auto;
+  height: 200px;
+}
+#creardesafio-container .main-container .primary-container .img-container {
+  width: 90%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#creardesafio-container .main-container .primary-container .img-container #avatar-img {
+  width: 150px;
+  height: 150px;
+}
+#creardesafio-container .main-container .primary-container .user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+#creardesafio-container .main-container .primary-container .user-info .user-item {
+  margin: 10px;
+}
+#creardesafio-container .main-container .main-subcontainer {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+#creardesafio-container .main-container .main-subcontainer .secondary-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15), 0 0px 3px rgba(0, 0, 0, 0.15);
+  justify-content: center;
+}
+#creardesafio-container .main-container .main-subcontainer .secondary-container .title {
+  width: 90%;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+#creardesafio-container .main-container .main-subcontainer .secondary-container .title .title-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 5;
+  margin: 0;
+  height: 130px;
+}
+#creardesafio-container .main-container .main-subcontainer .secondary-container #form-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: 60px;
+}
+#creardesafio-container .main-container .main-subcontainer .secondary-container #form-content .input-subtitles {
+  font-family: "Raleway", sans-serif;
+  color: #504e4e;
+}
+#creardesafio-container .main-container .main-subcontainer .secondary-container #form-content .input-field {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #da96e5;
+  font-family: "Raleway", sans-serif;
+  color: #504e4e;
+}
+#creardesafio-container .main-container .main-subcontainer .secondary-container #form-content .input-field:focus {
+  outline: none;
+  border: 1.5px solid #c652da;
+}
+#creardesafio-container .main-container .main-subcontainer .secondary-container #form-content .input-description {
+  resize: vertical;
+  max-height: 300px;
+  min-height: 150px;
+}
+#creardesafio-container .main-container .main-subcontainer .secondary-container #form-content .btn {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #d591e1;
+  border: 1px solid #c47bd0;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+#creardesafio-container .main-container .main-subcontainer .tertiary-container {
+  display: flex;
+  flex-grow: 1.5;
+}
+#creardesafio-container .main-container .main-subcontainer .tertiary-container #aside-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+#creardesafio-container .main-container .main-subcontainer .tertiary-container #aside-content .aside-title {
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  color: #504e4e;
+}
+#creardesafio-container .main-container .main-subcontainer .tertiary-container #aside-content .table-container .challenge-table #addTitle {
+  margin-left: 20px;
+  margin-top: 0px;
+}
+#creardesafio-container .main-container .main-subcontainer .tertiary-container #aside-content .table-container .challenge-table #addDescription {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+#creardesafio-container .main-container .main-subcontainer .tertiary-container #aside-content .table-container .challenge-table #addQuestions {
+  margin-left: 20px;
 }
 
 #crearPregunta {
@@ -563,6 +757,265 @@ footer .developers-container .developers .dev .github .fa-github {
   border-radius: 5px;
   width: 120px;
   height: 60px;
+}
+
+#login *, #login *:before, #login *:after {
+  box-sizing: border-box;
+}
+#login body {
+  background: #c1bdba;
+  font-family: "Titillium Web", sans-serif;
+}
+#login a {
+  text-decoration: none;
+  color: #1ab188;
+  transition: 0.5s ease;
+}
+#login a:hover {
+  color: #179b77;
+}
+#login .form {
+  background: rgba(255, 58, 117, 0.9);
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(255, 58, 117, 0.3);
+}
+#login .tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+#login .tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#login .tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(248, 182, 182, 0.25);
+  color: #f8b6b6;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+#login .tab-group li a:hover {
+  background: #179b77;
+  color: #ffffff;
+}
+#login .tab-group .active a {
+  background: #1ab188;
+  color: #ffffff;
+}
+#login .tab-content > div:last-child {
+  display: none;
+}
+#login h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+#login label {
+  position: absolute;
+  transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+#login label .req {
+  margin: 2px;
+  color: #1ab188;
+}
+#login label.active {
+  transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+#login label.active .req {
+  opacity: 0;
+}
+#login label.highlight {
+  color: #ffffff;
+}
+#login input, #login textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #f8b6b6;
+  color: #ffffff;
+  border-radius: 0;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+#login input:focus, #login textarea:focus {
+  outline: 0;
+  border-color: #1ab188;
+}
+#login textarea {
+  border: 2px solid #f8b6b6;
+  resize: vertical;
+}
+#login .field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+#login .top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#login .top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+#login .top-row > div:last-child {
+  margin: 0;
+}
+#login .button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #1ab188;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+#login .button:hover, #login .button:focus {
+  background: #179b77;
+}
+#login .button-block {
+  display: block;
+  width: 100%;
+}
+#login .forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+
+#perfil {
+  font-family: "Raleway", sans-serif;
+}
+#perfil .column-container {
+  display: flex;
+  margin: 5% auto;
+  width: 90%;
+}
+#perfil .column-container .personal-column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#perfil .column-container .personal-column .avatar-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#perfil .column-container .personal-column .avatar-container img {
+  width: 45%;
+  border-radius: 60%;
+  display: flex;
+}
+#perfil .column-container .personal-column .nickname, #perfil .column-container .personal-column .puntaje, #perfil .column-container .personal-column .siguiendo, #perfil .column-container .personal-column .lesiguen, #perfil .column-container .personal-column .estadisticas {
+  width: 60%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+#perfil .column-container .action-column {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+#perfil .column-container .action-column .personaldiv {
+  height: 40%;
+  border-style: solid;
+  border-color: rgba(128, 128, 128, 0.808);
+}
+#perfil .column-container .action-column .actions-column {
+  display: flex;
+}
+#perfil .column-container .action-column .actions-column .first-column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#perfil .column-container .action-column .actions-column .first-column .jugar {
+  border-style: double;
+  width: 50%;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+}
+#perfil .column-container .action-column .actions-column .second-column {
+  width: 60%;
+  margin-top: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#perfil .column-container .action-column .actions-column .second-column .friend {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 4%;
+  background-color: #d34a73;
+  border-radius: 5%;
+}
+#perfil .column-container .action-column .actions-column .second-column .friend .friend-avatar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+#perfil .column-container .action-column .actions-column .second-column .friend .friend-avatar img {
+  width: 40%;
+  height: 32%;
+  margin: 3%;
+}
+#perfil .column-container .action-column .actions-column .second-column .friend .interact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4%;
+}
+#perfil .column-container .action-column .actions-column .second-column .friend .interact .name {
+  margin: 4%;
+  display: flex;
+  justify-content: center;
+}
+#perfil .column-container .action-column .actions-column .second-column .friend .interact .interactive {
+  border-style: double;
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  margin: 4% 0 4% 0;
 }
 
 #rankings {

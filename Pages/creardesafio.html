@@ -1,30 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crear Desafío</title>
-    <link rel="stylesheet" href="creardesafio.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Images/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css?family=Heebo|Open+Sans+Condensed:300|Raleway&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/e5aa4cba17.js"></script>
+    <link rel="stylesheet" href="../Styles/css/main.css">
+    <title>preguntADAs</title>
 </head>
-<header>
-<!-----------------------------------  BANNER   ---------------------------------->
-    <div id="banner" >
-        <h1 class="banner-text">preguntADAs</h1>
+
+<body>
+    <header>
+        <!-----------------------------------  BANNER   ---------------------------------->
+        <div id="banner">
+            <h1 class="banner-text">preguntADAs</h1>
+        </div>
+        <!-----------------------------------  NAV BAR   ---------------------------------->
+        <nav id="nav-bar">
+            <a class="menu-link" href="/index.html"><i class="fas fa-home"></i>Home</a>
+            <a class="menu-link" href="/Pages/perfil.html"><i class="fas fa-portrait"></i>Perfil</a>
+            <a class="menu-link" href="/Pages/juego.html"><i class="fas fa-gamepad"></i>Juego</a>
+            <a class="menu-link" href="/Pages/crearpregunta.html"><i class="fas fa-edit"></i>Crear pregunta</a>
+            <a class="menu-link" href="/Pages/creardesafio.html"><i class="fas fa-gavel"></i></i>Crear desafío</a>
+            <a class="menu-link" href="/Pages/rankings.html"><i class="fas fa-trophy"></i>Ranking</a>
+            <a class="menu-link" href="/Pages/notificaciones.html"><i class="fas fa-clipboard-list"></i>Notificaciones</a>
+            <a class="menu-link" href="/Pages/login.html"><i class="fas fa-sign-out-alt"></i>Salir</a>
+        </nav>
+    </header>
+
+    <div id="creardesafio-container">
+        <!-----------------------------     INICIO MAIN CONTAINER      -------------------------->
+        <div class="main-container">
+            <div class="primary-container">
+                <div class="img-container">
+                    <img id="avatar-img" src="../Images/avatar.jpg" alt="user avatar">
+                </div>
+                <div class="user-info">
+                    <h3 class="user-item">User</h3>
+                    <h4 class="user-item">Nivel</h4>
+                    <h5 class="user-item">Ranking</h5>
+                </div>
+            </div>
+            <!-----------------------------     INICIO SECONDARY CONTAINER     ---------------------->
+            <div class="main-subcontainer">
+                <div class="secondary-container">
+                    <div class="title">
+                        <h1 class="title-content">CREAR DESAFÍO</h1>
+                    </div>
+                    <form id="form-content">
+                        <p class="input-subtitles">Título</p>
+                        <input id="challenge-title" class="input-field" type="text"
+                            placeholder="Escribe aquí el título del desafío" onchange="showChallengeTitle()" required>
+                        <p class="input-subtitles">Descripción</p>
+                        <input id="challenge-description" class="input-field input-description" type="text"
+                            placeholder="Escribe aquí la descripción del desafío" onchange="showChallengeDescription()"
+                            required>
+                        <p class="input-subtitles">Preguntas</p>
+                        <select id="select-questions" class="input-field" name="select"
+                            onchange="showChallengeQuestions()">
+                            <option selected disabled value="">Seleccione</option>
+                            <option value="value1" id="value1">Pregunta 1</option>
+                            <option value="value2" id="value2">Pregunta 2</option>
+                            <option value="value3" id="value3">Pregunta 3</option>
+                            <option value="value4" id="value4">Pregunta 4</option>
+                            <option value="value5" id="value5">Pregunta 5</option>
+                            <option value="value6" id="value6">Pregunta 6</option>
+                            <option value="value7" id="value7">Pregunta 7</option>
+                            <option value="value8" id="value8">Pregunta 8</option>
+                            <option value="value9" id="value9">Pregunta 9</option>
+                            <option value="value10" id="value10">Pregunta 10</option>
+                        </select>
+                        <button type="submit" class="btn">ENVIAR DESAFÍO</button>
+                    </form>
+                </div>
+                <!-----------------------------     INICIO TERTIARY CONTAINER     ---------------------->
+                <div class="tertiary-container">
+                    <aside id="aside-content">
+                        <h4 class="aside-title">TU DESAFÍO</h4>
+                        <div class="table-container">
+                            <table class="challenge-table">
+                                <tr>
+                                    <td>
+                                        <p id="addTitle">Titulo</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p id="addDescription">Descripción</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p id="addQuestions">Preguntas añadidas</p>
+                                    </td>
+                                    <td>cruce 3</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
     </div>
-<!-----------------------------------  NAV BAR   ---------------------------------->
-    <nav id="nav-bar">
-        <a class="menu-link" href="#"><i class="fas fa-home"></i>Home</a>
-        <a class="menu-link" href=""><i class="fas fa-portrait"></i>Perfil</a>
-        <a class="menu-link" href=""><i class="fas fa-gamepad"></i>Juego</a>
-        <a class="menu-link" href=""><i class="fas fa-edit"></i>Crear pregunta</a>
-        <a class="menu-link" href=""><i class="fas fa-gavel"></i></i>Crear desafío</a>
-        <a class="menu-link" href=""><i class="fas fa-trophy"></i>Ranking</a>
-        <a class="menu-link" href=""><i class="fas fa-clipboard-list"></i>Notificaciones</a>
-        <a class="menu-link" href=""><i class="fas fa-sign-out-alt"></i>Salir</a>
-    </nav>
-</header>
+    <!-------------------------------    FOOTER      --------------------------->
+    <footer>
+        <h5 class="footer-text">Developed with <i class="fas fa-heart"></i> by</h5>
+        <div class="developers-container">
+            <ul class="developers">
+                <li class="dev">
+                    <img src="../Images/karen.jpg" alt="avatar karen burdman" class="dev-avatar">
+                    <h6 class="dev-name">Karen Burdman</h6>
+                    <a href="https://www.linkedin.com/in/karen-burdman-0482ba39/" class="linkedin"><i
+                            class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/Karen1311" class="github"><i class="fab fa-github"></i>GitHub</a>
+                </li>
+                <li class="dev">
+                    <img src="../Images/paula.jpg" alt="avatar paula coronel" class="dev-avatar">
+                    <h6 class="dev-name">Paula Coronel</h6>
+                    <a href="https://www.linkedin.com/in/paula-coronel-it/" class="linkedin"><i
+                            class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/PauCoronel" class="github"><i class="fab fa-github"></i>GitHub</a>
+                </li>
+                <li class="dev">
+                    <img src="../Images/peu.jpg" alt="avatar paula illanes" class="dev-avatar">
+                    <h6 class="dev-name">Paula Illanes</h6>
+                    <a href="https://www.linkedin.com/in/paula-illanes-romina/" class="linkedin"><i
+                            class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/nicthema" class="github"><i class="fab fa-github"></i>GitHub</a>
+                </li>
+                <li class="dev">
+                    <img src="../Images/sofi.jpg" alt="avatar sofía russmann" class="dev-avatar">
+                    <h6 class="dev-name">Sofía Russmann</h6>
+                    <a href="https://www.linkedin.com/in/sof%C3%ADa-russmann-393754172/" class="linkedin"><i
+                            class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/sorussmann/" class="github"><i class="fab fa-github"></i>GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../JS/creardesafio.js"></script>
+</body>
+
+</html>

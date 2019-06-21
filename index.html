@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet"  href="Styles/css/main.css">
-    <title>preguntAdas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="16x16" href="../preguntADAs/Images/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css?family=Heebo|Open+Sans+Condensed:300|Raleway&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e5aa4cba17.js"></script>
+    <link rel="stylesheet" href="../preguntADAs/Styles/css/main.css">
+    <title>preguntADAs</title>
 </head>
+
 <body>
-        
+    <header>
+        <!-----------------------------------  BANNER   ---------------------------------->
+        <div id="banner">
+            <h1 class="banner-text">preguntADAs</h1>
+        </div>
+        <!-----------------------------------  NAV BAR   ---------------------------------->
+        <nav id="nav-bar">
+            <a class="menu-link" href="index.html"><i class="fas fa-home"></i>Home</a>
+            <a class="menu-link" href="/Pages/perfil.html"><i class="fas fa-portrait"></i>Perfil</a>
+            <a class="menu-link" href="/Pages/juego.html"><i class="fas fa-gamepad"></i>Juego</a>
+            <a class="menu-link" href="/Pages/crearpregunta.html"><i class="fas fa-edit"></i>Crear pregunta</a>
+            <a class="menu-link" href="/Pages/creardesafio.html"><i class="fas fa-gavel"></i></i>Crear desafío</a>
+            <a class="menu-link" href="/Pages/rankings.html"><i class="fas fa-trophy"></i>Ranking</a>
+            <a class="menu-link" href="/Pages/notificaciones.html"><i class="fas fa-clipboard-list"></i>Notificaciones</a>
+            <a class="menu-link" href="/Pages/login.html"><i class="fas fa-sign-out-alt"></i>Salir</a>
+        </nav>
+    </header>
+
+    <div id="index-container">
+        <!-----------------------------     INICIO MAIN CONTAINER      -------------------------->
+        <div class="main-container">
+            <div class="primary-container">
+                <div class="img-container">
+                    <img id="avatar-img" src="../preguntADAs/Images/avatar.jpg" alt="user avatar">
+                </div>
+                <div class="user-info">
+                    <h3 class="user-item">User</h3>
+                    <h4 class="user-item">Nivel</h4>
+                    <h5 class="user-item">Ranking</h5>
+                </div>
+            </div>
+            <!-----------------------------     INICIO SECONDARY CONTAINER     ---------------------->
+            <div class="main-subcontainer">
+                <div class="secondary-container">
+                    <a href="/Pages/juego.html" class="btn-home">NUEVO JUEGO</a>
+                    <button type="button" class="btn-home">DESAFÍO</button>
+                    </form>
+                </div>
+                <!-----------------------------     INICIO TERTIARY CONTAINER     ---------------------->
+                <div class="tertiary-container">
+                    <aside id="aside-content">
+                        <h4 class="aside-title">TUS COMPETENCIAS</h4>
+                        <p id="addTitle"></p>
+
+                        <p id="addDescription"></p>
+
+                        <p id="addQuestions"></p>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------       INICIO FOOTER HOME     -------------------------------->
+    <footer>
+        <h5 class="footer-text">Developed with <i class="fas fa-heart"></i> by</h5>
+        <div class="developers-container">
+            <ul class="developers">
+                <li class="dev">
+                    <img src="../preguntADAs/Images/karen.jpg" alt="avatar karen burdman" class="dev-avatar">
+                    <h6 class="dev-name">Karen Burdman</h6>
+                    <a href="https://www.linkedin.com/in/karen-burdman-0482ba39/" class="linkedin"><i
+                            class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/Karen1311" class="github"><i class="fab fa-github"></i>GitHub</a>
+                </li>
+                <li class="dev">
+                    <img src="../preguntADAs/Images/paula.jpg" alt="avatar paula coronel" class="dev-avatar">
+                    <h6 class="dev-name">Paula Coronel</h6>
+                    <a href="https://www.linkedin.com/in/paula-coronel-it/" class="linkedin"><i
+                            class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/PauCoronel" class="github"><i class="fab fa-github"></i>GitHub</a>
+                </li>
+                <li class="dev">
+                    <img src="../preguntADAs/Images/peu.jpg" alt="avatar paula illanes" class="dev-avatar">
+                    <h6 class="dev-name">Paula Illanes</h6>
+                    <a href="https://www.linkedin.com/in/paula-illanes-romina/" class="linkedin"><i
+                            class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/nicthema" class="github"><i class="fab fa-github"></i>GitHub</a>
+                </li>
+                <li class="dev">
+                    <img src="../preguntADAs/Images/sofi.jpg" alt="avatar sofía russmann" class="dev-avatar">
+                    <h6 class="dev-name">Sofía Russmann</h6>
+                    <a href="https://www.linkedin.com/in/sof%C3%ADa-russmann-393754172/" class="linkedin"><i
+                            class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/sorussmann/" class="github"><i class="fab fa-github"></i>GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../preguntADAs/JS/index.js"></script>
 </body>
+
 </html>

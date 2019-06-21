@@ -1,39 +1,137 @@
-#banner{
-    width: 90%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 25px;
-    height: 200px;  
-    background: linear-gradient(0deg,#FFCCCC ,#CCFFFF);
-    border-radius: 10px;
-}
-
-.banner-text {
-    font-family: 'Heebo', sans-serif;
-    font-size: 60px;
-    color: #504e4e;
-    display: flex;
-    align-items: center;
-}
-
-#nav-bar {
-    width: 90%;
-    height: 20px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.menu-link {
-    font-family: 'Raleway', sans-serif;
-    color: #4f81aa;
-    text-decoration: none;
-}
-
-.fas {
-    margin-right: 5px;
+#creardesafio-container {
+    width: 100%;
+    .main-container {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        .primary-container {
+            display: inline-flex;
+            width: 90%;
+            margin: 0 auto;
+            height: 200px;
+            .img-container {
+                width: 90%;
+                height: 200px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                #avatar-img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            .user-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 90%;
+                font-family: $title-font;
+                .user-item {
+                    margin: 10px;
+                }
+            }
+        }
+        .main-subcontainer {
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 20px;
+            align-items: flex-start;
+            .secondary-container {
+                display: flex;
+                flex-wrap: wrap;
+                flex-grow: 1;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                box-shadow: 0 5px 5px rgba(0,0,0,0.15), 0 0px 3px rgba(0,0,0,0.15);
+                justify-content: center;
+                .title {
+                    width: 90%;
+                    font-family: $title-font;
+                    .title-content {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        line-height: 5;
+                        margin: 0;
+                        height: 130px;
+                    }
+                }
+                #form-content {
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    margin-bottom: 60px;
+                    .input-subtitles {
+                        font-family: $body-font;
+                        color: $main-color;
+                    }
+                    .input-field {
+                        padding: 10px;
+                        border-radius: 5px;
+                        border: 1px solid #da96e5;
+                        font-family: $body-font;
+                        color: $main-color;
+                        &:focus {
+                            outline: none;
+                            border: 1.5px solid #c652da;
+                        }
+                    }
+                    .input-description {
+                        resize: vertical;
+                        max-height: 300px;
+                        min-height: 150px;
+                    }
+                    .btn {
+                        font-family: $body-font;
+                        letter-spacing: 0.5px;
+                        color: $white;
+                        padding: 20px;
+                        border-radius: 5px;
+                        width: 60%;
+                        margin: auto;
+                        margin-top: 40px;
+                        background-color: #d591e1;
+                        border: 1px solid #c47bd0;
+                        box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.2);   
+                    }
+                }
+            }
+            .tertiary-container {
+                display: flex;
+                flex-grow: 1.5;
+                #aside-content {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+                    .aside-title {
+                        display: flex;
+                        justify-content: center;
+                        font-family: $body-font;
+                        color: $main-color;
+                    }
+                    .table-container {
+                        .challenge-table {
+                            #addTitle {
+                                margin-left: 20px;
+                                margin-top: 0px;
+                            }
+                            #addDescription {
+                                margin-left: 20px;
+                                margin-top: 50px;
+                            }
+                            #addQuestions {
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
